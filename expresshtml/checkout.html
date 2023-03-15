@@ -8,6 +8,7 @@
     <title>Express | My Shopping Bag</title>
     <link rel="stylesheet" type="text/css" href="../expresscss/checkout.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -92,7 +93,7 @@
                         <label for="">Zip Code</label>
                         <input type="text" class="inputfield">
                     </div>
-                    <div class=" lastname-citytown">
+                    <div class="lastname-citytown">
                         <label for="">City/Town</label>
                         <input type="text" class="inputfield">
                     </div>
@@ -120,19 +121,94 @@
             <h4><i class="fa-solid fa-truck"></i> &nbsp;SHIP TO HOME</h4>
             <div>
                 <input type="radio">
-                <span>COD</span>
+                <label for="">Cash On Delivery</label>
             </div>
             <div>
                 <input type="radio">
-                <span>Credit/Debit/UPI</span>
+                <label for="">Credit/Debit/UPI</label>
             </div>
             <button class="button-style" type="submit">SAVE & CONTINUE</button>
         </div>
         <div>
             <h2>Payment</h2>
+            <div class="username">
+                <div class="firstname-zipcode">
+                    <label for="">Gift Card Number</label>
+                    <input type="text" id="inputfield-giftcard-number">
+                </div>
+                <button id="promo-checkout-button">APPLY</button>
+            </div>
+            <br>
+            <div>
+                <label for="" class="upi-button-col"><b>UPI ID</b></label>
+                <input type="text" class="inputfield">
+                <input type="submit" id="button-style-upi">
+            </div>
+            <br>
+            <b><i> Merchent Coming Soon....</i> </b>
+            <br>
+            <br>
+            <div class="icon-container-payment">
+                <input type="radio" id="">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <div>
+                <label for="">Card Number</label>
+                <input type="text" class="inputfield-full">
+            </div>
+            <div>
+                <label for="">Name on Card</label>
+                <input type="text" class="inputfield-full">
+            </div>
+            <div class="username">
+                <div class="payment-card-col1">
+                    <label for="">Exp Month</label>
+                    <select name="" id="contry-style">
+                        <option value="UT">01</option>
+                        <option value="KT">02</option>
+                        <option value="MA">03</option>
+                        <option value="AP">04</option>
+                        <option value="HP">05</option>
+                        <option value="PN">06</option>
+                        <option value="WB">07</option>
+                        <option value="HR">08</option>
+                        <option value="TN">09</option>
+                        <option value="TN">10</option>
+                        <option value="TN">11</option>
+                        <option value="TN">12</option>
+                    </select>
+                </div>
+                <div class="payment-card-col2">
+                    <label for="">Exp Year</label>
+                    <select name="" id="contry-style">
+                        <option value="UT">23</option>
+                        <option value="KT">24</option>
+                        <option value="MA">25</option>
+                        <option value="AP">26</option>
+                        <option value="HP">27</option>
+                        <option value="PN">28</option>
+                        <option value="WB">29</option>
+                        <option value="HR">30</option>
+                        <option value="TN">31</option>
+                        <option value="TN">32</option>
+                        <option value="TN">33</option>
+                        <option value="TN">34</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="" id="cvv-text">CVV</label>
+                    <input type="text" class="inputfield-cvv">
+                </div>
+            </div>
         </div>
         <div>
             <h2>Review & Place Order</h2>
+            <form action="./orderconfirmation.html" method="POST">
+                <input type="submit" class="button-style" />
+            </form>
         </div>
     </div>
 </body>

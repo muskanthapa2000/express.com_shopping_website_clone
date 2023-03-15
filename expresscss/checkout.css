@@ -32,6 +32,8 @@
     width: 100%;
 }
 
+
+
 .inputfield-full {
     border: none;
     border-bottom: 1px solid black;
@@ -39,8 +41,6 @@
     margin: 10px;
 
 }
-
-
 
 #contry-style {
     border: none;
@@ -65,4 +65,79 @@
 
 .button-style:hover {
     background-color: rgb(92, 87, 87);
+}
+
+#inputfield-giftcard-number {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+
+#promo-checkout-button {
+    border: 0;
+    /* line-height: 3; */
+    padding: 0 26px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgb(11, 11, 11);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    margin-top: 1%;
+
+}
+
+#promo-checkout-button:hover {
+    background-color: rgb(92, 87, 87);
+}
+
+#button-style-upi {
+    border: 0;
+    line-height: 2;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgb(11, 11, 11);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    margin-top: 2%;
+    /* box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6); */
+}
+
+#button-style-upi:hover {
+    background-color: rgb(92, 87, 87);
+}
+
+.icon-container-payment {
+    margin-bottom: 20px;
+    /* padding: 7px 0; */
+    font-size: 30px;
+}
+
+.inputfield-cvv {
+    margin: 28px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+
+#cvv-text {
+    margin-left: 20px;
+}
+
+.payment-card-col1 {
+    margin-right: 15px;
+}
+
+.payment-card-col2 {
+    margin-left: 15px;
+}
+
+.upi-button-col {
+    font-size: 18px;
+}
+
+input {
+    margin: .4rem;
 }
