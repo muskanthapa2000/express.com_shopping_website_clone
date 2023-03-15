@@ -1,8 +1,0 @@
-#top-scroll{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-.top-scroll-div{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
