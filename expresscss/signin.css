@@ -1,3 +1,205 @@
-#logindiv{
-border: 3px solid black;
+body{
+    font-family: 'Arial';
 }
+#navbar{
+    height:100px;
+    width:100%;
+}
+#maindiv{
+    margin-top: 1000px;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+#leftdiv{
+    
+    width:30%;
+    background-color: black;
+    padding:20px;
+    
+
+   
+}
+#leftdiv{
+    /* text-decoration: black; */
+    color:white;
+
+}
+#head{
+    margin-top: 30px;
+       
+        margin-bottom: -10px;
+        font-size: 30px;
+        
+
+}
+#imgdiv>img{
+   
+    /* margin :auto; */
+    width:50%;
+    
+}
+#imgdiv{
+ display: flex;
+ justify-content: right;
+}
+
+.offer{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.offer img{
+    margin-left: -5px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+#rightdiv{
+    margin-top: -10px;
+    width:45%;
+}
+#signup{
+    height:35px;
+    width:85px;
+    border:0.5px solid black;
+    border-radius: 0px;
+    background-color: white;
+}
+
+
+
+
+#logindiv{
+    border: 3px solid rgba(0, 0, 0, 0.007);
+    margin :auto;
+    /* width :500px; */
+    /* padding : 20px; */
+    background: white;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    
+    }
+    #password,#email{
+      border:0px;
+      margin-top: -10px;
+      border-radius: 0px;
+      /* border-top-color:none; */
+      box-shadow: inset 0px 1px 1px 1px rgba(120, 119, 119, 0.124);
+      border-bottom: 1.5px solid rgb(110, 109, 109);
+      width :100%;
+      height: 40px;
+    }
+    #showbtn{
+    margin-top: -10px;
+    border:1px solid black;
+      border-radius: 0px;
+      border-color: rgb(124, 124, 124);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width :85px;
+      height: 40px;
+      
+    }
+    #passworddiv{
+      display: flex;
+      justify-content: space-between;        
+      width :100%;
+      
+      align-items:center;
+    }
+    #passworddiv>input{
+      width: 85%;
+    }
+    #passworddiv>button{
+      width :60px;
+      background-color: white;
+      border-radius: 0px;
+      height: 40px;
+      align-content: right;
+      justify-content: space-between;
+      font-weight: 600;
+    
+    }
+    #signinbtn{
+      margin : 20px 0px 10px;
+      width : 150px;
+      height: 40px;
+      
+      background-color:#d5d6d6 ;
+      border: none;
+      font-size:medium;
+    }
+    #forgetpass{
+      text-decoration: underline;
+      color:rgb(124, 124, 124)
+       ;
+    }
+    #notmember{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #head{
+    /* font-weight: 600; */
+    margin-bottom: -10px;
+    font-size: 30px;
+    }
+    b{
+    font-weight: 800;
+    }
+    #head+p{
+    margin-bottom: 30px;
+    }
+
+   #signuplinkdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+#head>button{
+width:20px;
+}
+
+#signupbtn{
+    height:35px;
+    width:85px;
+    border:0.5px solid black;
+    border-radius: 0px;
+    background-color: white;
+}
+
+
+a{
+  text-decoration: none;
+}
+button>a{
+  color: white;
+}
+
+
+
+
+
+#maindiv{
+    width:70%;
+    margin :auto;
+}
+@media only screen and (max-width: 1080px) {
+    
+        #maindiv{
+            width:100%;
+            margin :auto;
+            display:flex;
+            justify-content: space-around;
+        }
+      
+    
+  }
