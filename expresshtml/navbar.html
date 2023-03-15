@@ -4,6 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Express - Men's & Women's Clothing</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -23,7 +25,7 @@
         span{
             color: #ffffff;
         }
-        a{
+        .topAnchor{
             color: #ffffff;
             font-size: 13px;
         }
@@ -43,8 +45,98 @@
             margin-left: -3px;
         }
         .access{
-            margin-left: 694px;
+            margin-left: 590px;
             font-weight: bold;
+        }
+        ._8CIPI{
+            display: inline;
+            margin-left: 6px;
+            color: #996981;
+        }
+        .smallHeader{
+            display: flex;
+            margin-left: 12px;
+            margin-top: 9px;
+        }
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        .expressHeader{
+            display: flex;
+            height: 61px;
+            /* border: 2px dotted red; */
+            padding: 14px;
+            height: 67px;
+        }
+        .ExpressImg{
+            margin-left: 262px;
+            margin-top: 9px;
+        }
+        .icons{
+            margin-left: 455px;
+        }
+        #searchIcon{
+            margin-left: -77px;
+            height: 50px;
+        }
+        #personIcon{
+            margin-left: 49px;
+            height: 50px;
+        }
+        #shoppingIcon{
+            margin-left: 42px;
+            height: 50px;
+        }
+        i{
+            font-size: large;
+        }
+        .headIcons{
+            margin-top: 4px;
+        }
+        .hover-underline-animation{
+            display: inline-block;
+            position: relative;
+            color: #4b4b4b;
+        }
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color:#212222;
+            transform-origin: bottom right;
+            transition: transform 0.50s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .hover-underline-animation:hover{
+            cursor: pointer;
+        }
+        .secondaryNav{
+            /* border: 1px solid red; */
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            margin-left: 13px;
+            align-items: center;
+            margin-top: 24px;
+        }
+        .qwe{
+            text-decoration: none;
+            margin-right: 34px;
+            color: #17171d;
+            height: 38px;
         }
     </style>
 </head>
@@ -58,13 +150,13 @@
                 &nbsp;Online only.&nbsp;
             </span>
             <span>
-                <a href="/g/modal/disclaimer/sitewide-disclaimer" target="_blank" id="anc">Exclusions &amp; Details</a>
+                <a class ="topAnchor" href="/g/modal/disclaimer/sitewide-disclaimer" target="_blank" id="anc">Exclusions &amp; Details</a>
             </span>
             <span class="anchorLink">
-                <a href="/womens-clothing/specialsale/cat3330002" target="_self">WOMEN</a>
+                <a class ="topAnchor" href="/womens-clothing/specialsale/cat3330002" target="_self">WOMEN</a>
             </span>
             <span class="anchorLink">
-                <a href="/mens-clothing/limited-deals/cat5050118" target="_self">MEN</a>
+                <a class ="topAnchor" href="/mens-clothing/limited-deals/cat5050118" target="_self">MEN</a>
             </span>
             <a style="color: #ffffff" href="#" title="By activating this link you will enable accessibility for all the data and features of the site"tabindex="100" class="access">
                 Enable Accessibility
@@ -72,11 +164,48 @@
         </p>
     </div>
     <div class="expressHeader">
-        <p>
-            <span>
-                
-            </span>
-        </p>
+        <div class="smallHeader">
+            <p id="secPara">Free Shipping on Orders $50+</p>
+            <a class="_8CIPI" href="https://www.google.com/">Details</a>
+        </div>
+        <div class="mainHeader">
+            <img alt="Express" src="https://www.express.com/content/dam/logos-fonts/logos/express/express-logo.svg" width="164" height="27" class="ExpressImg">
+        </div>
+        <div class="headIcons">
+            <p class="icons">
+                <i class="material-icons fa-xl hover-underline-animation" id="searchIcon">search</i>
+                <i class="material-icons fa-xl hover-underline-animation" id="personIcon">person_outline</i>
+                <i class="material-icons fa-xl hover-underline-animation" id="shoppingIcon">shopping_cart</i>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <!-- Secondary NavBar -->
+    <div class="secondaryNav">
+        <h4>
+            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">WOMEN</a>
+        </h4>
+        <h4>
+            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">MEN</a>
+        </h4>
+        <h4>
+            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">JEANS</a>
+        </h4>
+        <h4>
+            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">NEW</a>
+        </h4>
+        <h4>
+            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">SALE</a>
+        </h4>
+        <h4>
+            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">STYLE TRIAL RENTAL</a>
+        </h4>
+        <h4>
+            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">COMMUNITY</a>
+        </h4>
+        <h4>
+            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">LABELS WE LOVE</a>
+        </h4>
     </div>
 </body>
 </html>
