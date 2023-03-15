@@ -1,0 +1,16 @@
+#parent{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+   
+}
+
+#parent > div{
+    padding:20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+img{
+    width: 100%;
+    height:250px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Section</title>
+    <!-- <style src="./expresscss/mens.css"></style> -->
+</head>
+<style>
+    #mid-section{
+        display: flex;
+        flex-direction: row;
+    }
+    #parent{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+   
+}
+#parent > div{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+img{
+    width: 100%;
+}
+#top_description{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    place-items: center;
+}
+
+</style>
+<body>
+    <div id="top_description">
+        <p>Men's/Shirts/Trending</p>
+        <h1>Men's Button Down Shirts</h1>
+        <p> Sort : <span>
+        <select id="sort">
+            <option value="">Relevance</option>
+            <option value="lowToHigh">Low To High</option>
+            <option value="HighToLow">High To Low</option>
+        </select></span></p>
+    </div>
+<div id="mid-section">
+    <div id="side_section">
+
+
+    </div>
+    <div id="parent">
+
+    </div>
+
+</div>
+</body>
+<script src="./expressjs/mens.js"></script>
+</html>
