@@ -1,0 +1,68 @@
+.username {
+    /* background-color: teal; */
+    display: flex;
+}
+
+.firstname {
+    width: 100%;
+    margin: 6px;
+    /* background-color: magenta; */
+
+}
+
+.lastname {
+    width: 100%;
+    margin: 6px;
+    /* background-color: green; */
+}
+
+.firstname-zipcode {
+    width: 50%;
+    margin: 6px
+}
+
+.lastname-citytown {
+    width: 50%;
+    margin: 6px;
+}
+
+.inputfield {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.inputfield-full {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 10px;
+
+}
+
+
+
+#contry-style {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 10px;
+}
+
+.button-style {
+    border: 0;
+    line-height: 3;
+    padding: 0 26px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgb(11, 11, 11);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    margin-top: 4%;
+    /* box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6); */
+}
+
+.button-style:hover {
+    background-color: rgb(92, 87, 87);
+}
