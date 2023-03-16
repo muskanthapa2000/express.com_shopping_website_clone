@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express | My Shopping Bag</title>
+    <link rel="stylesheet" type="text/css" href="../expresscss/checkout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="checkout">
+        <div class="checkout-form">
+            <div class="box-col">
+                <h1>Checkout</h1>
+            </div>
+            <div class="box-col">
+                <h2>Contact Info</h2>
+                <form action="">
+                    <div class="username">
+                        <div class="firstname">
+                            <label for="">First Name</label>
+                            <input type="text" class="inputfield">
+                        </div>
+                        <div class="lastname">
+                            <label for="">Last Name</label>
+                            <input type="text" class="inputfield">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Email Address</label>
+                        <input type="email" class="inputfield-full">
+                    </div>
+                    <div>
+                        <label for="">Confirm Email Address</label>
+                        <input type="email" class="inputfield-full">
+                    </div>
+                    <div>
+                        <label for="">Phone Number</label>
+                        <input type="number" class="inputfield-full">
+                    </div>
+                    <button class="button-style" type="submit">SAVE & CONTINUE</button>
+
+                </form>
+            </div>
+            <div class="box-col">
+                <h2>Shipping & Billing Address</h2>
+                <form action="">
+                    <div class="username">
+                        <div class="firstname">
+                            <label for="">First Name</label>
+                            <input type="text" class="inputfield">
+                        </div>
+                        <div class="lastname">
+                            <label for="">Last Name</label>
+                            <input type="text" class="inputfield">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Country</label>
+                        <select name="" id="contry-style">
+                            <option value="IND">🇮🇳 INDIA</option>
+                            <option value="US">🇺🇸 United States</option>
+                            <option value="AU">🇦🇺 Australia</option>
+                            <option value="AT">🇦🇹 Austria</option>
+                            <option value="BE">🇧🇪 Belgium</option>
+                            <option value="BR">🇧🇷 Brazil</option>
+                            <option value="BG">🇧🇬 Bulgaria</option>
+                            <option value="CA">🇨🇦 Canada</option>
+                            <option value="CN">🇨🇳 China</option>
+                            <option value="CY">🇨🇾 Cyprus</option>
+                            <option value="DK">🇩🇰 Denmark</option>
+                            <option value="IE">🇮🇪 Ireland</option>
+                            <option value="IL">🇮🇱 Israel</option>
+                            <option value="IT">🇮🇹 Italy</option>
+                            <option value="JP">🇯🇵 Japan</option>
+                            <option value="TT">🇹🇹 Trinidad and Tobago</option>
+                            <option value="GB">🇬🇧 United Kingdom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Street Address</label>
+                        <input type="text" class="inputfield-full">
+                    </div>
+                    <div>
+                        <label for="">Apt #, Floor, etc. (optional)</label>
+                        <input type="email" class="inputfield-full">
+                    </div>
+                    <div class="username">
+                        <div class="firstname-zipcode">
+                            <label for="">Zip Code</label>
+                            <input type="text" class="inputfield">
+                        </div>
+                        <div class="lastname-citytown">
+                            <label for="">City/Town</label>
+                            <input type="text" class="inputfield">
+                        </div>
+                        <div>
+                            <label for="">State</label>
+                            <select name="" id="contry-style">
+                                <option value="UT">Uttar Pradesh</option>
+                                <option value="KT">Karnataka</option>
+                                <option value="MA">Maharashtra</option>
+                                <option value="AP">Andhra Pradesh</option>
+                                <option value="HP">Himachal Pradesh</option>
+                                <option value="PN">Punjab</option>
+                                <option value="WB">West Bengal</option>
+                                <option value="HR">Haryana</option>
+                                <option value="TN"> Tamil Nadu</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="button-style" type="submit">SAVE & CONTINUE</button>
+
+                </form>
+            </div>
+            <div class="box-col">
+                <h2>Shipping Options</h2>
+                <h4><i class="fa-solid fa-truck"></i> &nbsp;SHIP TO HOME</h4>
+                <div>
+                    <input type="radio">
+                    <label for="">Cash On Delivery</label>
+                </div>
+                <div>
+                    <input type="radio">
+                    <label for="">Credit/Debit/UPI</label>
+                </div>
+                <button class="button-style" type="submit">SAVE & CONTINUE</button>
+            </div>
+            <div class="box-col">
+                <h2>Payment</h2>
+                <div class="username">
+                    <div class="firstname-zipcode">
+                        <label for="">Gift Card Number</label>
+                        <input type="text" id="inputfield-giftcard-number">
+                    </div>
+                    <button id="promo-checkout-button">APPLY</button>
+                </div>
+                <br>
+                <div>
+                    <label for="" class="upi-button-col"><b>UPI ID</b></label>
+                    <input type="text" class="inputfield">
+                    <input type="submit" id="button-style-upi">
+                </div>
+                <br>
+                <b><i> Merchent Coming Soon....</i> </b>
+                <br>
+                <br>
+                <div class="icon-container-payment">
+                    <input type="radio" id="">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <div>
+                    <label for="">Card Number</label>
+                    <input type="text" class="inputfield-full">
+                </div>
+                <div>
+                    <label for="">Name on Card</label>
+                    <input type="text" class="inputfield-full">
+                </div>
+                <div class="username">
+                    <div class="payment-card-col1">
+                        <label for="">Exp Month</label>
+                        <select name="" id="contry-style">
+                            <option value="UT">01</option>
+                            <option value="KT">02</option>
+                            <option value="MA">03</option>
+                            <option value="AP">04</option>
+                            <option value="HP">05</option>
+                            <option value="PN">06</option>
+                            <option value="WB">07</option>
+                            <option value="HR">08</option>
+                            <option value="TN">09</option>
+                            <option value="TN">10</option>
+                            <option value="TN">11</option>
+                            <option value="TN">12</option>
+                        </select>
+                    </div>
+                    <div class="payment-card-col2">
+                        <label for="">Exp Year</label>
+                        <select name="" id="contry-style">
+                            <option value="UT">23</option>
+                            <option value="KT">24</option>
+                            <option value="MA">25</option>
+                            <option value="AP">26</option>
+                            <option value="HP">27</option>
+                            <option value="PN">28</option>
+                            <option value="WB">29</option>
+                            <option value="HR">30</option>
+                            <option value="TN">31</option>
+                            <option value="TN">32</option>
+                            <option value="TN">33</option>
+                            <option value="TN">34</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="" id="cvv-text">CVV</label>
+                        <input type="text" class="inputfield-cvv">
+                    </div>
+                </div>
+            </div>
+            <div class="box-col">
+                <h2>Review & Place Order</h2>
+                <form action="./orderconfirmation.html" method="POST">
+                    <input type="submit" class="button-style" />
+                </form>
+            </div>
+        </div>
+        <div class="order-details">
+            <div class="box-col">
+                <h3><i class="fa-solid fa-tags"></i> Have a Promo Code?</h3>
+                Only one code can be used at a time.
+            </div>
+            <div class="box-col">
+                <h2>Order Summary</h2>
+            </div>
+            <div class="box-col">
+                <h2>Shopping Bag</h2>
+            </div>
+            <div class="box-col">
+                <h3>A Few Things You Should Know</h3>
+                <p> <i class="fa fa-lock" aria-hidden="true"></i> All transactions are safe and secure.</p>
+                <p> <i class="fa fa-undo" aria-hidden="true"></i> Return In-Store or Online for up to 60 days.</p>
+                <p> <i class="fa fa-phone" aria-hidden="true"></i> Call us anytime at (888) 397-1980.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
