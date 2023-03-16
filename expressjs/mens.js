@@ -99,11 +99,17 @@ function displayproduct(){
         name.textContent = el.name;
         var price = document.createElement("p");
         price.textContent = el.price;
-        // img.addEventListener("click",function(){
-        //     navToNextPage()
-        // });
+        img.addEventListener("click",function(){
+            navToNextPage(el);
+        });
         div.append(img,desc,name,price);
      document.getElementById("parent").append(div);
     })
     
+}
+var product_desc = JSON.parse(localStorage.getItem("mensdata")) || [];
+function navToNextPage(product){
+    product_desc.push(product);
+    localStorage.setItem("mensdata",JSON.stringify(product_desc));
+    window.location.href="./mensdesc.html";
 }
