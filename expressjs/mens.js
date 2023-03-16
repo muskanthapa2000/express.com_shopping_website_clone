@@ -107,7 +107,7 @@ function displayproduct(){
     })
     
 }
-var product_desc = JSON.parse(localStorage.getItem("mensdata")) || [];
+var product_desc = [];
 function navToNextPage(product){
     product_desc.push(product);
     localStorage.setItem("mensdata",JSON.stringify(product_desc));
