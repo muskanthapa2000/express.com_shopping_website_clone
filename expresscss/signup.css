@@ -1,0 +1,162 @@
+body{
+    font-family: 'Arial';
+}
+
+#navbar{
+    height:100px;
+    width:100%;
+}
+#maindiv{
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+
+#leftdiv{
+    
+    width:30%;
+    background-color: black;
+    padding:20px;
+    
+
+   
+}
+#leftdiv{
+    /* text-decoration: black; */
+    color:white;
+
+}
+#head{
+    margin-top: 30px;
+       
+        margin-bottom: -10px;
+        font-size: 30px;
+        
+
+}
+#imgdiv>img{
+   
+    /* margin :auto; */
+    width:50%;
+    
+}
+#imgdiv{
+ display: flex;
+ justify-content: right;
+}
+
+.offer{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.offer img{
+    margin-left: -5px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#signinlink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#signinbtn{
+    height:35px;
+    width:85px;
+    border:0.5px solid black;
+    border-radius: 0px;
+    background-color: white;
+}
+#signinlink>p{
+font-weight: 100;
+font-size:20px;
+
+}
+input{
+    width:100%;
+}
+form>p{
+    font-weight: 100;
+    font-size:15px;
+    
+    }
+.namediv{
+    display: flex;
+    justify-content: space-between;
+
+}
+.namediv>div{
+    width:48%;
+}
+
+.passdiv{
+    display: flex;
+    justify-content: space-between;
+
+}
+.passdiv>div{
+    width:48%;
+}
+
+#chkboxdiv>input{
+display: flex;
+flex-direction: column;
+justify-content: right;
+align-items: center;
+}
+input,select{
+    border:0px;
+    margin-top: -10px;
+    border-radius: 0px;
+    /* border-top-color:none; */
+    box-shadow: inset 0px 1px 1px 1px rgba(120, 119, 119, 0.124);
+    border-bottom: 1.5px solid rgb(110, 109, 109);
+    width :100%;
+    height: 40px;
+  }
+#createac{
+    margin-top: 20px;
+    width:200px;
+    height:50px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+button+p{
+    font-size: 15px;
+    color: rgb(84, 83, 83);
+}
+/* #leftdiv{
+    width:20%;
+} */
+#rightdiv{
+    width:40%;
+}
+#maindiv{
+    width:70%;
+    margin :auto;
+}
+a{
+    text-decoration: none;
+  }
+  button>a{
+    color: white;
+  }
+@media only screen and (max-width: 1080px) {
+    
+        #maindiv{
+            width:100%;
+            margin :auto;
+            display:flex;
+            justify-content: space-around;
+        }
+      
+    
+  }

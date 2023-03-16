@@ -4,34 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
-    
-    <link rel="stylesheet" href="./expresscss/signin.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../expresscss/signin.css" />
 </head>
 <body>
-    <div id="logindiv">
-        <h1>EXPRESSINSIDER</h1>
-        <p>A world of reward and access.</p>
-        <form>
-           <p>Email</p>
-          <input id="email" placeholder="" type="text" />
-           <p>Password</p>
-           <div id="passworddiv">
-          <input id="password" placeholder="" type="password" />
-          <button id="showbtn">SHOW</button>
-          </div>
-          
-          <input type="submit" value="SIGN IN" /> 
-          <P>Forgot Password</P>
-          <hr>
-          <div id ="notmember">
-            <p>Not a member?</p>
-            <a href="signin.html">Join For Free</a>
-          </div>
-        </form>
-      </div>
+    <div id="navbar"></div>
+    <div id ="maindiv">
+        <div id="leftdiv">
+            <p id="head"><b>EXPRESS</b>INSIDER</p>
+            <p>Countless perks--for FREE? It dosen't get better than this.</p>
+            <h3>What's New</h3>
+            <div class="offer">
+                <div><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzbC9ZSQchGJGbAtmZy9aBLgoLMVi4Dl6Lr6BiWO1z6BedwjiC" alt=""></div>
+                <div><h4>EXPRESS CASH</h4></div>
+            </div >
+            <div class="offer" >
+                <div><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXR-XNKUI3EriqVuZ25ZwOPJHSFMoDvYVr9MqDPbtiB6lY3B2q" alt="birthday"></div>
+                <div><h4>BIRTHDAY(& HALF-BIRTHDAY) GIFTS</h4></div>
+            </div>
+            <div class="offer">
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpEIE9ApRydXJCjQpeRx8bqIFWk2GAsluzeblIPgoKMwVX5NHR" alt="lock"></div>
+                <div><h4>EARLY ACCESS & MORE</h4></div>
+            </div>
+            <div id="imgdiv">
+                <img src="https://www.express.com/rvn/assets/images/Express-Insider-New-Tiers-V2-Couple-new.e45ccf09.jpg" alt="leftdiv">
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div id="rightdiv">
+            <div id="logindiv">
+                <p id="head"><b>EXPRESS</b>INSIDER</p>
+                <div id="signuplinkdiv"><p>A world of reward and access.</p>
+                <a href="signup.html"><button id="signupbtn">SIGN UP</button></div></a>
+                
+                <form>
+                  <div> 
+                   <p>Email</p>
+                  <input id="email" placeholder="" type="email" />
+                  </div> 
+                  <div> 
+                  <p>Password</p>
+                   <div id="passworddiv">
+                  <input id="password" placeholder="" type="password" />
+                  <div id="showbtn">SHOW</div>
+                  </div>
+                </div>
+                  
+                  <input id="signinbtn" type="submit" value="SIGN IN" /> 
+                  <P id = "forgetpass">Forgot Password</P>
+                  <hr>
+                  <div id ="notmember">
+                    <p>Not a member?</p>
+                    <a href="signup.html">Join For Free</a>
+                  </div>
+                </form>
+              </div>
+
+
+
+        </div>
+    </div>
+
 
 
     
 </body>
 </html>
+<script src="../expressjs/signin.js"></script>
