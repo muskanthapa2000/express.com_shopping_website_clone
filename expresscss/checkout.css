@@ -1,6 +1,36 @@
-.username {
-    /* background-color: teal; */
+body {
+    background-color: #f4f4f4;
+}
+
+.checkout {
     display: flex;
+}
+
+.box-col {
+    height: auto;
+    background-color: white;
+    margin: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    /* border: 1px solid black; */
+}
+
+.checkout-form {
+    width: 55%;
+    margin-left: 10%;
+}
+
+.order-details {
+    /* background-color: teal; */
+    width: 24%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.username {
+    display: flex;
+    justify-content: center;
 }
 
 .firstname {
@@ -37,7 +67,7 @@
 .inputfield-full {
     border: none;
     border-bottom: 1px solid black;
-    width: 100%;
+    width: 99%;
     margin: 10px;
 
 }
@@ -140,4 +170,22 @@
 
 input {
     margin: .4rem;
+}
+
+.orderconfirm-container {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: 10%;
+    padding-bottom: 20px;
+    /* background-color: green; */
+}
+
+#order-col1-color {
+    color: green;
+}
+
+#new {
+    color: white;
+    font-size: large;
 }
