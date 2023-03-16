@@ -224,7 +224,7 @@ function caltotal(){
    function check(){
         var ch = document.getElementById("promo").value;
         console.log(ch);
-        if(ch == "masai30"){
+        if(ch == "pw11"){
             var temp = document.createElement("p");
             temp.setAttribute("class","krp");
             temp = "Congrats You are eligible for 30% off";
