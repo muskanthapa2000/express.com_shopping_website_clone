@@ -192,14 +192,31 @@ button>a{
     width:70%;
     margin :auto;
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: 421px) and (max-width: 1080px) {
     
-        #maindiv{
-            width:100%;
-            margin :auto;
-            display:flex;
-            justify-content: space-around;
-        }
-      
-    
+  #maindiv{
+      width:100%;
+      margin :auto;
+      display:flex;
+      justify-content: space-around;
   }
+
+
+}
+
+
+
+
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 520px) {
+     #leftdiv{
+      display:none;
+     
+
+           
+          }
+          #rightdiv{
+              padding:1px;
+              width:100%;
+          }
+}
