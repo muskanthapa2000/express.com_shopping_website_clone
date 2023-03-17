@@ -4,84 +4,98 @@ var mens_data = [
         desc : "NEW | online only",
         name : "Geo Print Cotton Shirt",
         price : "$78.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01694306_0410_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Geo Print Rayon Shirt",
         price : "$68.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01762769_0001_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Stripped Sheersucker Shirt",
         price : "$68.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01691463_2024_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Watercolor Print Rayon Shirt",
         price : "$68.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01698365_0134_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Palm Print Rayon Shirt",
         price : "$88.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01690278_2903_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Watercolor Print Rayon Shirt",
         price : "$68.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01698309_1056_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Mixed Print Rayon Shirt",
         price : "$78.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01696291_2907_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Daimond Print Rayon Shirt",
         price : "$68.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01690223_1056_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Striped Rayon Shirt",
         price : "$78.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01698358_1056_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "NEW | online only",
         name : "Striped Geo Print Rayon Shirt",
         price : "$68.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01691123_2902_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "online only",
         name : "Tropical Floral Rayon Shirt",
         price : "$78.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01690375_0134_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "online only",
         name : "Geo Print Rayon Shirt",
         price : "$78.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01769610_0001_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "online only",
         name : "Solid Strech Cotton Shirt",
         price : "$78.00",
+        size : ['S','M','L','XL','XXL'],
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01698330_0530_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
         desc : "online only",
         name : "Floral Print Cotton Shirt",
         price : "$78.00",
+        size : ['S','M','L','XL','XXL'],
     },
 ]
 
@@ -107,7 +121,7 @@ function displayproduct(){
     })
     
 }
-var product_desc = JSON.parse(localStorage.getItem("mensdata")) || [];
+var product_desc = [];
 function navToNextPage(product){
     product_desc.push(product);
     localStorage.setItem("mensdata",JSON.stringify(product_desc));
