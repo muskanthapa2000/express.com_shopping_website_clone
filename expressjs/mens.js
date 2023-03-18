@@ -5,6 +5,7 @@ var mens_data = [
         name : "Geo Print Cotton Shirt",
         price : 78,
         size : ['S','M','L','XL','XXL'],
+        color : "Camel 140",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01694306_0410_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -12,6 +13,7 @@ var mens_data = [
         name : "Geo Print Rayon Shirt",
         price : 68,
         size : ['S','M','L','XL','XXL'],
+        color : "Light Blue 1068",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01762769_0001_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -19,6 +21,7 @@ var mens_data = [
         name : "Stripped Sheersucker Shirt",
         price : 68,
         size : ['S','M','L','XL','XXL'],
+        color : "White 1",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01691463_2024_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -26,6 +29,7 @@ var mens_data = [
         name : "Watercolor Print Rayon Shirt",
         price : 68,
         size : ['S','M','L','XL','XXL'],
+        color : "Seagreen 2024",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01698365_0134_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -33,6 +37,7 @@ var mens_data = [
         name : "Palm Print Rayon Shirt",
         price : 88,
         size : ['S','M','L','XL','XXL'],
+        color : "Chalk 134",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01690278_2903_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -40,6 +45,7 @@ var mens_data = [
         name : "Watercolor Print Rayon Shirt",
         price : 68,
         size : ['S','M','L','XL','XXL'],
+        color : "Seagreen 2024",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01698309_1056_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -47,6 +53,7 @@ var mens_data = [
         name : "Mixed Print Rayon Shirt",
         price : 78,
         size : ['S','M','L','XL','XXL'],
+        color : "Jet Black 1956",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01696291_2907_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -54,6 +61,7 @@ var mens_data = [
         name : "Daimond Print Rayon Shirt",
         price : 68,
         size : ['S','M','L','XL','XXL'],
+        color : "Stone 2907",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01690223_1056_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -61,6 +69,7 @@ var mens_data = [
         name : "Striped Rayon Shirt",
         price : 78,
         size : ['S','M','L','XL','XXL'],
+        color : "Jet Black 1056",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01698358_1056_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -68,6 +77,7 @@ var mens_data = [
         name : "Striped Geo Print Rayon Shirt",
         price : 68,
         size : ['S','M','L','XL','XXL'],
+        color : "Stone 123",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01691123_2902_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -75,6 +85,7 @@ var mens_data = [
         name : "Tropical Floral Rayon Shirt",
         price : 78,
         size : ['S','M','L','XL','XXL'],
+        color : "Neutral Print 24",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01690375_0134_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -82,6 +93,7 @@ var mens_data = [
         name : "Geo Print Rayon Shirt",
         price : 78,
         size : ['S','M','L','XL','XXL'],
+        color : "chalk 123",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01769610_0001_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -89,6 +101,7 @@ var mens_data = [
         name : "Solid Strech Cotton Shirt",
         price : 78,
         size : ['S','M','L','XL','XXL'],
+        color : "Neutral Print 24",
     },
     {
         img_url : "https://images.express.com/is/image/expressfashion/0020_01698330_0530_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
@@ -96,6 +109,7 @@ var mens_data = [
         name : "Floral Print Cotton Shirt",
         price : 78,
         size : ['S','M','L','XL','XXL'],
+        color : "Awesome 73",
     },
 ]
 
@@ -125,7 +139,7 @@ function displayproduct(mens_data){
 var product_desc = [];
 function navToNextPage(product){
     product_desc.push(product);
-    localStorage.setItem("mensdata",JSON.stringify(product_desc));
+    localStorage.setItem("decription_data",JSON.stringify(product_desc));
     window.location.href="./mensdesc.html";
 }
 document.getElementById("sort").addEventListener("change",pricesort);
@@ -174,5 +188,8 @@ function filterbyprice(){
 
         })
         displayproduct(newarr);
+    }
+    if(selected==""){
+        displayproduct(mens_data);
     }
 }

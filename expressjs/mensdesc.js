@@ -1,22 +1,26 @@
-var product_desc = JSON.parse(localStorage.getItem("mensdata")) || [];
+var product_desc = JSON.parse(localStorage.getItem("decription_data")) || [];
 displayproduct()
 function displayproduct(){
     product_desc.map(function(el){
         var div1 = document.createElement("div");
         var div2 = document.createElement("div");
+        div2.setAttribute("id","side_panel");
+        div1.setAttribute("id","product_image");
 
         var img = document.createElement("img");
         img.setAttribute("src",el.img_url);
         img.setAttribute("alt",el.name);
-        img.setAttribute("class","product_image");
+        // img.setAttribute("class","product_image");
         var desc = document.createElement("p");
         desc.textContent = el.desc;
-        var name = document.createElement("h3");
+        var name = document.createElement("h1");
         name.textContent = el.name;
+        var color = document.createElement("h4");
+        color.textContent = "Color : "+el.color;
         var price = document.createElement("p");
-        price.textContent = el.price;
+        price.textContent = "$"+el.price+".00";
         var btn = document.createElement("button");
-        btn.textContent = "Add To Cart";
+        btn.textContent = "Add To Bag";
         btn.setAttribute("id","cartbtn");
         btn.addEventListener("click",function(){
             addToCart(el);
@@ -37,7 +41,7 @@ function displayproduct(){
             changefun(el)
         });
         div1.append(img);
-        div2.append(desc,name,price,select_size,btn);
+        div2.append(desc,name,color,price,select_size,btn);
      document.getElementById("parent").append(div1,div2);
     })
     

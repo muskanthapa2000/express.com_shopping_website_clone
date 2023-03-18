@@ -199,9 +199,41 @@
         #parent{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            /* justify-content: space-evenly; */
             gap: 10%;
+            margin: auto;
+            padding: 2%;
         }
+        #parent+h4{
+            padding: 2%;
+            font-size: large;
+        }
+        #side_panel{
+            width: 40%;
+            padding-bottom: 80px;
+            margin-bottom: auto;
+            align-self: first baseline;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #cartbtn{
+            display: block;
+            background-color: black;
+            color: white;
+            height: 50px;
+            
+        }
+        #product_image{
+            border: 1px,solid,grey;
+            padding: 2px;
+        }
+        /* #product_image:hover{
+            border: 1px,solid,black;
+        } */
+        /* option:hover{
+            background-color: #000000;
+        } */
 
     </style>
 </head>
@@ -274,10 +306,11 @@
     </div>
     <div id="parent" >
         <!-- append the data here -->
-        <div id="size">
-            
-        </div>
     </div>
+
+    <h4>#ExpressYou<br>
+
+        Dream Big. Dress Accordingly. Share your style on social with #ExpressYou and tag @express to be featured here.</h4>
     <!-- <div id="product_description" >
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXiGiqheKv4KguI1lcQbGPT2EPQHWCyJRTfYMor9fnjlo8WTxhLzusTbkEmwLDTDn9qJUmz3C9BOyyjknbiPDgjQektkvB3u7Pq6c_FqgmXNoEQGT5vXC5hyXT_SCng851qxAq_zem0WLAbrCowYBWqoCOa6nYPmTYnUTsu6ZA_Mb4laj20znSjUA3/s1280/prem.jpg"
          alt="">
