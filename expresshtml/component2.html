@@ -1,0 +1,359 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .containerTop{
+            display: flex;
+            /* border: 1px solid red; */
+            height: 104px;
+            background-color: #18181c;
+        }
+        .left{
+            color: #ffffff;
+        }
+        .para{
+            margin-top: 25px;
+        }
+        .same{
+            margin-left: 75px;
+            line-height: 25px;
+            font-family: 'Rubik', sans-serif;
+            letter-spacing: 1px;
+        }
+        .right{
+            margin-left: 445px;
+
+        }
+        .spanId{
+            color: white;
+            margin-top: 30px;
+            font-size: 13px;
+            margin-left: 141px;
+            /* font-weight: bold; */
+        }
+        .anc{
+            color: #ffffff;
+            margin-left: 142px;
+            margin-top: -16px;
+            font-size: 13px;
+            text-decoration: underline;
+            cursor: pointer;
+            /* /* display: inline; */
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: bold;
+        }
+        .anc1{
+            color: #ffffff;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-left: 195px;
+            margin-top: -17px;
+            font-size: 13px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: bold;
+        }
+        u{
+            margin-left: 3px;
+            cursor: pointer;
+        }
+        .containerBottom{
+            display: flex;
+            /* border: 1px solid black; */
+            height: 184px;
+            justify-content: space-evenly;
+            margin-top: 41px;
+        }
+        .box{
+            /* border: 1px solid red; */
+            width: 14%;
+        }
+        img{
+            height: 86%;
+            width: 99%;
+        }
+        .bottm1{
+            margin-top: 9px;
+            margin-left: 27px;
+            /* text-align: center; */
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            /* text-decoration: underline; */
+            border-bottom: 1px solid currentColor;
+            display: inline;
+            font-family: 'Fira Sans', sans-serif;
+            cursor: pointer;
+        }
+        .bottm2{
+            margin-top: 9px;
+            margin-left: 36px;
+            /* text-align: center; */
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            /* text-decoration: underline; */
+            border-bottom: 1px solid currentColor;
+            display: inline;
+            font-family: 'Fira Sans', sans-serif;
+            cursor: pointer;
+        }
+        .bottm3{
+            margin-top: 9px;
+            margin-left: 61px;
+            /* text-align: center; */
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            /* text-decoration: underline; */
+            border-bottom: 1px solid currentColor;
+            display: inline;
+            font-family: 'Fira Sans', sans-serif;
+            cursor: pointer;
+        }
+        .bottm4{
+            margin-top: 9px;
+            margin-left: 44px;
+            /* text-align: center; */
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            /* text-decoration: underline; */
+            border-bottom: 1px solid currentColor;
+            display: inline;
+            font-family: 'Fira Sans', sans-serif;
+            cursor: pointer;
+        }
+        .bottm5{
+            margin-top: 9px;
+            margin-left: 28px;
+            /* text-align: center; */
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            /* text-decoration: underline; */
+            border-bottom: 1px solid currentColor;
+            display: inline;
+            font-family: 'Fira Sans', sans-serif;
+            cursor: pointer;
+        }
+        .bottm6{
+            margin-top: 9px;
+            margin-left: 48px;
+            /* text-align: center; */
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            /* text-decoration: underline; */
+            border-bottom: 1px solid currentColor;
+            display: inline;
+            font-family: 'Fira Sans', sans-serif;
+            cursor: pointer;
+        }
+        .imgContainer{
+            margin-top: 53px;
+            width: 100%;
+            height: 417px;
+            cursor: pointer;
+        }
+        .blank{
+            margin-top: 81px;
+        }
+        .comm{
+            position:absolute;
+        }
+        .header121{
+            margin-top: 171px;
+            margin-left: 541px;
+            font-size: 47px;
+            color: #ffffff;
+            font-family: 'Rubik', sans-serif;
+        }
+        .para121{
+            margin-top: 226px;
+            margin-left: 541px;
+            color: #ffffff;
+            font-family: 'Rubik', sans-serif;
+            font-size: 15px;
+        }
+        .btn121{
+            margin-top: 258px;
+            margin-left: 540px;
+            padding: 10px;
+            width: 139px;
+            height: 41px;
+            border: 1px solid #ffffff;
+            border-radius: 1px;
+            color: #0e1c28;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Rubik', sans-serif;
+            letter-spacing: 3px;
+        }
+        .btn121:hover{
+            background-color: #d6d6d6;
+        }
+        .commCards{
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: space-around;
+        }
+        .box121{
+            /* border: 1px solid green; */
+            height: 355px;
+            width: 259px;
+        }
+        .head121{
+            margin-top: 6px;
+            text-align: center;
+            font-size: 21px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .para124{
+            margin-top: 12px;
+    /* text-align: center; */
+            font-size: 15px;
+            border-bottom: 1px solid black;
+            display: inline-block;
+            margin-left: 37px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        .qwe12{
+            line-height: 26px;
+            /* border-bottom: 1px solid black; */
+            /* margin-left: 80px; */
+        }
+        .vom{
+            margin-left: 71px;
+        }
+        .vom1{
+            margin-left: 80px;
+        }
+        .ind{
+            font-weight: lighter;
+        }
+        .fristpra{
+            margin-left: 31px;
+        }
+        .comm1{
+            margin-bottom: 0px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 26px;
+            margin-top: 63px;
+            /* position: relative; */
+            padding: 53px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+        }
+        .community{
+            background-color: #f5f5f5;
+            height: 550px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerTop">
+        <div class="left">
+            <p class="para same">EXTRA 40% OFF FOR</p>
+            <h1 class="same">Up to 60% Off Clearance</h1>
+        </div>
+        <div class="right">
+            <p class="spanId">Online & in stores.<u>Exclusions & Details</u></p>
+            <br>
+                <p class="anc">WOMEN</p>
+            <div class="flexAnc">
+                <p class="anc1">MEN</p>
+            </div>
+        </div>
+    </div>
+    <div class="containerBottom">
+        <div class="box">
+            <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/01-hp-w-dt.jpg" alt="">
+            <p class="bottm1">WOMEN'S TOPS</p>
+        </div>
+        <div class="box">
+            <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/02-hp-m-dt.jpg" alt="">
+            <p class="bottm2">MEN'S SHIRTS</p>
+        </div>
+        <div class="box">
+            <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/03-hp-w-dt.jpg" alt="">
+            <p class="bottm3">DRESSES</p>
+        </div>
+        <div class="box">
+            <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/04-hp-m-dt.jpg" alt="">
+            <p class="bottm4">MEN'S JEANS</p>
+        </div>
+        <div class="box">
+            <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/05-hp-w-dt.jpg" alt="">
+            <p class="bottm5">WOMEN'S JACKETS</p>
+        </div>
+        <div class="box">
+            <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/06-hp-m-dt.jpg" alt="">
+            <p class="bottm6">MEN'S SUITS</p>
+        </div>
+    </div>
+    <!-- Icons part -->
+    <div class="iconsContainer">
+        <h1 class="comm header121">Icons</h1>
+        <p class="comm para121">Versatile closet essentials for everyday, effortless style.</p>
+        <button class="comm btn121">SHOP NOW</button>
+        <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/01-january/0130-digital-21836-wlp/dt/icons-dt-2.jpg" alt="" class="imgContainer">
+    </div>
+    <div class="blank">
+
+    </div>
+    <div class="community">
+        <h2 class="comm1">OUR COMMUNITY</h2>
+        <div class="commCards">
+            <div class="box121">
+                <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/comm-1-dt.jpg" alt="">
+                <h2 class="head121">Style.Inspire.Earn</h2>
+                <p class="para124 fristpra">BECOME A STYLE EDITOR</p>
+            </div>
+            <div class="box121">
+                <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/community-2-tipstricks-dt.jpg" alt="">
+                <h2 class="head121">Styling Tips and Tricks</h2>
+                <p class="para124 vom">WATCH & SHOP</p>
+            </div>
+            <div class="box121">
+                <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/03-march/0227-digital-22685-hp-new/dt/comm-3-dt.jpg" alt="">
+                <h2 class="head121 qwe12">Big Brothers Big Sisters of America Tees</h2>
+                <p class="para124 vom vom1">SHOP NOW</p>
+            </div>
+            <div class="box121">
+                <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/02-february/0205-digital-23679-hp-sns/community-4-insider-dt.jpg" alt="">
+                <h2 class="head121">EXPRESS<span id="ind">INSIDER</span></h2>
+                <p class="para124 vom">JOIN FOR FREE</p>
+            </div>
+        </div>
+    </div>
+    <div class="blank">
+
+    </div>
+</body>
+</html>
