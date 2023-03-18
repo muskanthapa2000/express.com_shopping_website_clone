@@ -50,8 +50,9 @@ function changefun(product){
 }
 
 
-var cart_data = [];
+var cart_data = JSON.parse(localStorage.getItem("cartData")) || [];
 function addToCart(product){
     cart_data.push(product);
     localStorage.setItem("cartData",JSON.stringify(cart_data));
+    window.location.href="./expresshtml/cart.html"
 }

@@ -202,11 +202,11 @@ ul{
 #parent{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    gap:20px;
+    gap:10px;
    
 }
 #parent > div{
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     margin-bottom: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -219,6 +219,22 @@ img{
     justify-content: space-between;
     height: fit-content;
     place-items: center;
+    padding: 10px;
+}
+
+#mainbody{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#side_sec{
+    width: 33%;
+    display: flex;
+
+}
+#price_filter{
+    height: min-content;
+    width: fit-content;
 }
 
 </style>
@@ -300,9 +316,22 @@ img{
             <option value="HighToLow">High To Low</option>
         </select></span></p>
     </div>
+<div id="mainbody">
+    <div id="side_sec">
+        <div>
+            <h3>filter by price :</h3>
+        </div>
+        <select name="filter by price" id="price_filter">
+            <option value="">select one</option>
+            <option value="30-50">$30.00-$50.00</option>
+            <option value="50-70">$50.00-$70.00</option>
+            <option value="70-90">$70.00-$90.00</option>
+        </select>
+    </div>
     <div id="parent">
 <!-- this section is appended using javascript methods -->
     </div>
+</div>
 <!--footer section starts here-->
 <div class="footer">
     <div class="part1">
