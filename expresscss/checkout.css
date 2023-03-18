@@ -9,11 +9,11 @@ body {
 .box-col {
     height: auto;
     background-color: white;
-    margin: 30px;
-    padding: 10px;
+    margin: 20px;
+    padding: 5px 10px;
     padding-left: 20px;
     border: 1px solid lightgrey;
-    /* border: 1px solid black; */
+
 }
 
 .checkout-form {
@@ -24,8 +24,19 @@ body {
 .order-details {
     /* background-color: teal; */
     width: 24%;
-    margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.checkout-header-col {
+    font-size: 15px;
+    font-weight: bold;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    margin: -10px -10px 10px -10px;
+
 }
 
 .username {
@@ -72,7 +83,14 @@ body {
 
 }
 
-#contry-style {
+#country-style {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 10px;
+}
+
+#country-style2 {
     border: none;
     border-bottom: 1px solid black;
     width: 100%;
@@ -168,7 +186,7 @@ body {
     font-size: 18px;
 }
 
-input {
+.input {
     margin: .4rem;
 }
 
@@ -188,4 +206,50 @@ input {
 #new {
     color: white;
     font-size: large;
+}
+
+.accordion {
+    /* background-color: #eee; */
+    /* color: #444; */
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
