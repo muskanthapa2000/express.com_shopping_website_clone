@@ -5,372 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Express - Men's & Women's Clothing</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-        body{
-            font-family: 'Arial';
-        }
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        #topHeader{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #000000;
-            height: 40px;
-            width: 100%;
-            padding: 0 50px 0px 50px;
-        }
-
-        #topHeader p{
-            font-size: 13.5px;
-            color: #ffffff;
-            text-decoration: underline;
-        }
-        span{
-            color: #ffffff;
-        }
-       
-
-        
-        
-        .anchorLink{
-            font-weight: bold;
-            font-size: 12px;
-            margin-left: 2px;
-        }
-        #anc{
-            margin-left: -3px;
-        }
-        .access{
-            margin-left: 590px;
-            font-weight: bold;
-        }
-      
-        
-        .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 48
-        }
-        .expressHeader{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 61px;
-            /* border: 2px dotted red; */
-            padding: 0 50px 0px 50px;
-            
-        }
-        #details{
-            text-decoration-color: #eedac4;
-        }
-
-       
-        
-        .icons{
-            display: flex;
-            justify-content: space-around;
-
-        }
-        p>a{
-            margin:0 10px 0 10px;
-        }
-       
-        
-        
-        .hover-underline-animation{
-            display: inline-block;
-            position: relative;
-            color: #4b4b4b;
-        }
-        .hover-underline-animation:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color:#212222;
-            transform-origin: bottom ;
-            transition: transform 0.50s ease-out;
-        }
-
-        .hover-underline-animation:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom center;
-        }
-        .hover-underline-animation:hover{
-            cursor: pointer;
-        }
-        /* #secondaryNav{
-            
-             height: 38px;
-            display: flex;
-            justify-content: center;
-            font-size: 15px;
-            margin-left: 13px;
-            align-items: center;
-            margin-top: 24px; 
-        } */
-        .qwe{
-            text-decoration: none;
-            /* margin-right: 34px; */
-            color: #17171d;
-            /* height: 38px; */
-        }
-        .mobileLink{
-            display: block;
-        }
-        .svgStore{
-            width: 120px;
-            border: 1px solid black;
-            border-radius: 1px;
-            /* margin-left: 12px; */
-        }
-        .svgIcons{
-            width: 30px;
-            margin-right: 8px;
-            margin-top: 19px;
-        }
-        .footer{
-            display: flex;
-            justify-content: space-evenly;
-            
-            height: 100%;
-        }
-        .part1{
-            margin-top: 128px;
-            
-        }
-        .googleBtn{
-            margin-left: 26px;
-        }
-        .mobileLink{
-            margin: 29px 0 19px 0;
-            /* text-decoration: none; */
-            color: #000000;
-            /* border-bottom: 2px; */
-            font-size: 12px;
-            font-weight: bolder;
-            font-family: 'Montserrat', sans-serif;
-            letter-spacing: 1px;
-        }
-       
-        .footer--app-badge-button{
-            text-decoration: none;
-        }
-        ul{
-            list-style: none;
-        }
-        .content{
-            margin-top: 123px;
-        }
-        .footerLink{
-            text-decoration: none;
-            color: #696969;
-        }
-        .head4{
-            margin-top: 17px;
-        }
-        .listStyle{
-            margin: 3px 0 3px 0;
-        }
-        .footerLink:hover{
-            text-decoration: underline;
-            color:#17171d;
-        }
-
-       .part1{
-        padding:auto;
-       }
-
-       
-     header{
-    width:100%;
-    border: 1px solid rgba(162, 161, 161, 0.474);
-    height: 70px;
-    position: relative;
-     }
-     .containerr{
-        display:flex;
-        justify-content: center;
-        width:80%;
-        margin :auto;
-        
-       
-        
-        
-
-     }
-     nav>ul{
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        
-
-     }
-     nav>ul>li{
-        padding: 20px 20px;
-        list-style: none;
-     }
-      
-     nav>ul>li>a{
-        text-decoration: none;
-        
-        
-        color: black;
-     }
-
-     .megamenu{
-        position: absolute;
-        top:70%;
-        left:0px;
-        width:100%;
-        opacity: 0;
-        visibility: hidden;
-        background-color: white;
-        display: flex;
-        justify-content:center;
-        transition: 0.3s;
-        height:400px;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-        
-        /* ma */
-        /* padding: 10%; */
-        /* padding: 0 10%; */
-        padding-left: 10%;
-        
-
-     }
-     nav>ul>li:hover .megamenu{
-        opacity: 100;
-        visibility: visible;
-        top:100%;
-
-     }
-
-     .megamenuitems h5{
-        padding: 4px 30px;
-     }
-
-     .megamenuitems ul li{
-        list-style: none;
-        font-size: 15px;
-        color: #696969;
-        padding: 4px 30px;
-        /* width: 50%; */
-     }
-     .megamenuitems h3{
-        padding: 60px;
-
-     }
-     #megamenuimg{
-        width:50%;
-     }
-     
-     nav>ul>li>a{
-        font-weight: 600;
-     }
-     
-
-
-
-
-        @media only screen and (min-width: 0px) and (max-width: 980px) {
-    
-       .secondaryNav{
-          display: none;
-          }
-        
-          .content {
-            display: none;
-
-          }
-          .containerr{
-            display: none;
-          }
-         
-        }
-
-        @media only screen and (min-width: 421px) and (max-width: 1080px) {
-    
-            .smallHeader{
-        display: none;
-       }
-       
-       #topHeader{
-        display: none;
-       }
-  
-  
-  }
-  
-  
-  
-  
-  /* small screens */
-  @media only screen and (min-width: 0px) and (max-width: 520px) {
-       .smallHeader{
-        display: none;
-       }
-       #topHeader{
-        display: none;
-       }
-      
-          
-  }
-
-        /* saperate */
-        #parent{
-            display: flex;
-            flex-wrap: wrap;
-            /* justify-content: space-evenly; */
-            gap: 10%;
-            margin: auto;
-            padding: 2%;
-        }
-        #parent+h4{
-            padding: 2%;
-            font-size: large;
-        }
-        #side_panel{
-            width: 40%;
-            padding-bottom: 80px;
-            margin-bottom: auto;
-            align-self: first baseline;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        #cartbtn{
-            display: block;
-            background-color: black;
-            color: white;
-            height: 50px;
-            
-        }
-        #product_image{
-            border: 1px,solid,grey;
-            padding: 2px;
-        }
-        /* #product_image:hover{
-            border: 1px,solid,black;
-        } */
-        /* option:hover{
-            background-color: #000000;
-        } */
-
-    </style>
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="./expresscss/mendesc.css" />
 </head>
 <body>
     <div id="topHeader">
@@ -406,7 +45,7 @@
         <div class="containerr">
             <nav>
                 <ul>
-                    <li><a href="womens.html" class="qwe hover-underline-animation"> WOMEN</a>
+                    <li><a href="../womens.html" class="qwe hover-underline-animation"> WOMEN</a>
                     <div class="megamenu">
                         <div class="megamenuitems">
                             <h5 >CLOTHING</h5>
@@ -468,7 +107,7 @@
                         
                     </div>
                 </li>
-                    <li><a href="mens.html"class="qwe hover-underline-animation">MEN</a>
+                    <li><a href="../mens.html"class="qwe hover-underline-animation">MEN</a>
                         <div class="megamenu">
                             <div class="megamenuitems">
                                 <h5 >CLOTHING</h5>
@@ -720,7 +359,7 @@
                             
                             
                         </div></li>
-                    <li><a href="#"class="qwe hover-underline-animation">LABELS WE LOVE</a>
+                    <li><a href="#"class="qwe hover-underline-animation">LEBALS WE LOVE</a>
                         <div class="megamenu">
                            
                             <div class="megamenuitems">
@@ -762,10 +401,7 @@
         </nav>
         </div>
     </header>
-
-
-        
-      
+  
     </div>
 
     <div id="parent" >
@@ -780,6 +416,63 @@
          alt="">
     </div> -->
     <!-- Footer section of the website -->
+    <div class="menu">
+        <div class="item"><a class="sub-btn">Store Locator</a> 
+        <div class="sub-menu">
+            <a href="#"class="sub-item">Find a Store</a>
+            <a href="#"class="sub-item">Expree Factory Outlet</a>
+            
+        </div>
+        </div>
+        <div class="item"><a class="sub-btn">Express Insider </a>
+            <div class="sub-menu">
+                <a href="#"class="sub-item">Express Insider Reward</a>
+                <a href="#"class="sub-item">Frequently Asked Questions</a>
+                <a href="#"class="sub-item">Terms And Condition</a>
+                
+            </div></div>
+        <div class="item"><a class="sub-btn">Express Credit Card</a>
+            <div class="sub-menu">
+                <a href="#"class="sub-item">Benifits</a>
+                <a href="#"class="sub-item">Apply</a>
+                <a href="#"class="sub-item">Pay/View Account</a>
+                
+            </div></div>
+        <div class="item"><a class="sub-btn">Gift Cards</a>
+            <div class="sub-menu">
+                <a href="#"class="sub-item">By Gift Cards</a>
+                <a href="#"class="sub-item">Check Your Balance</a>
+                
+                
+            </div></div>
+        <div class="item"><a class="sub-btn">About Express</a>
+            <div class="sub-menu">
+                <a href="#"class="sub-item">Overview</a>
+                <a href="#"class="sub-item">Investor Relation</a>
+                <a href="#"class="sub-item">ESG</a>
+                <a href="#"class="sub-item">Careers</a>
+                
+                
+            </div>
+        </div>
+        <div class="item"><a class="sub-btn">Customer Service</a>
+            <div class="sub-menu">
+                <a href="#"class="sub-item">Contact Us</a>
+                <a href="#"class="sub-item">Help</a>
+                <a href="#"class="sub-item">Express Coupons</a>
+                <a href="#"class="sub-item">Shipping Policy</a>
+                <a href="#"class="sub-item">Return Policy</a>
+                <a href="#"class="sub-item">Student Discount</a>
+                <a href="#"class="sub-item">Feedback</a>
+                <a href="#"class="sub-item">Google Ad Price Policy</a>
+                
+            </div>
+        </div>
+        </div>
+     </div>
+
+
+    
     <div class="footer">
         <div class="part1">
             <div id="applegstore">
@@ -953,6 +646,16 @@
             </ul>
         </div>
     </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+            });
+        });
+    </script>
 </body>
 <script src="./expressjs/mensdesc.js"></script>
 </html>

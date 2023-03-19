@@ -18,7 +18,7 @@ function displayproduct(){
         var color = document.createElement("h4");
         color.textContent = "Color : "+el.color;
         var price = document.createElement("p");
-        price.textContent = "$"+el.price+".00";
+        price.textContent = "Price : "+"$"+el.price+".00";
         var btn = document.createElement("button");
         btn.textContent = "Add To Bag";
         btn.setAttribute("id","cartbtn");
