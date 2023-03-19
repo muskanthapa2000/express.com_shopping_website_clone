@@ -152,6 +152,9 @@ function caltotal(){
           var change = (t*3)/10;
           var anss=document.getElementById("pr");
           anss.textContent = t - change;
+
+
+          
           localStorage.setItem("promoVal",anss.textContent);
           anss.textContent=localStorage.getItem("promoVal");
 
