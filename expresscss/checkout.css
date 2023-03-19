@@ -1,5 +1,7 @@
 body {
     background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
 }
 
 .checkout {
@@ -10,7 +12,7 @@ body {
     height: auto;
     background-color: white;
     margin: 20px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     padding-left: 20px;
     border: 1px solid lightgrey;
 
@@ -90,7 +92,21 @@ body {
     margin: 10px;
 }
 
+#billing-country-style {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 10px;
+}
+
 #country-style2 {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 10px;
+}
+
+#billing-country-style2 {
     border: none;
     border-bottom: 1px solid black;
     width: 100%;
@@ -183,7 +199,7 @@ body {
 }
 
 .upi-button-col {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .input {
@@ -200,7 +216,7 @@ body {
 }
 
 #order-col1-color {
-    color: green;
+    color: black;
 }
 
 #new {
