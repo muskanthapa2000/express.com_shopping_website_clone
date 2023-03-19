@@ -1,8 +1,9 @@
 var cart=JSON.parse(localStorage.getItem("cartData")) || [];
 document.querySelector("button").addEventListener("click", check);
-var ind=document.querySelector("#child").value;
+// var ind=document.querySelector("#child").value;
 if(cart===0){
    document.querySelector("body").value;
+  //  alert("Select item to cart")
 }else{
 
   displayCart(cart);
@@ -31,7 +32,7 @@ cart.map(function(elem,index){
     p.textContent=elem.color;
 
     var pa=document.createElement("p")
-    pa.textContent=elem.size;
+    pa.textContent=elem.selected;
 
 
 
@@ -134,11 +135,11 @@ function caltotal(){
 
   }
   document.getElementById("pr").textContent=carval;
-
-
-
-
  }
+
+
+
+
  function check(){
       var ch = document.getElementById("promo").value;
       console.log(ch);
@@ -149,6 +150,14 @@ function caltotal(){
           document.getElementById("Offer").append(temp);
           var t = parseInt(document.getElementById("pr").textContent);
           var change = (t*3)/10;
-          document.getElementById("pr").textContent = t - change;
+          var anss=document.getElementById("pr");
+          anss.textContent = t - change;
+          localStorage.setItem("promoVal",anss.textContent);
+          anss.textContent=localStorage.getItem("promoVal");
+
       }
   }
+
+
+//  var totalpri = JSON.parse(localStorage.setItem("caltotal",carval))||[];
+//  functon tot_pri()
