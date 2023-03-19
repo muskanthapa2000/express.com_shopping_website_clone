@@ -138,8 +138,6 @@ function caltotal() {
 }
 
 
-
-
 function check() {
   var ch = document.getElementById("promo").value;
   console.log(ch);
@@ -152,11 +150,10 @@ function check() {
     var change = (t * 3) / 10;
     var anss = document.getElementById("pr");
     anss.textContent = t - change;
-    // localStorage.setItem("promoVal", anss.textContent);
-    // anss.textContent = localStorage.getItem("promoval");
 
     var cartDataObj = { cartTotalValue: anss.textContent }
     localStorage.setItem("promo-value", JSON.stringify(cartDataObj));
+
 
   }
 }
