@@ -7,61 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Express | My Shopping Bag</title>
     <link rel="stylesheet" type="text/css" href="../expresscss/checkout.css" />
+    <!-- <link rel="stylesheet" type="text/" href="../expressjs/checkout.js" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+    <div class="checkout-header-col">
+        <h1>EXPRESS</h1>
+    </div>
     <div class="checkout">
         <div class="checkout-form">
             <div class="box-col">
-                <h1>Checkout</h1>
+                <h1 style="font-weight: lighter;">Checkout</h1>
             </div>
-            <div class="box-col">
-                <h2>Contact Info</h2>
-                <form action="">
+            <div class="box-col show" id="contact-form-id">
+                <h2 style="font-weight: lighter;">Contact Info</h2>
+                <form action="" id="submitContact">
                     <div class="username">
                         <div class="firstname">
                             <label for="">First Name</label>
-                            <input type="text" class="inputfield">
+                            <input type="text" id="firstname" class="inputfield" required>
                         </div>
                         <div class="lastname">
                             <label for="">Last Name</label>
-                            <input type="text" class="inputfield">
+                            <input type="text" id="lastname" class="inputfield" required>
                         </div>
                     </div>
                     <div>
                         <label for="">Email Address</label>
-                        <input type="email" class="inputfield-full">
+                        <input type="email" id="email" class="inputfield-full" required>
                     </div>
                     <div>
                         <label for="">Confirm Email Address</label>
-                        <input type="email" class="inputfield-full">
+                        <input type="email" id="confirmemail" class="inputfield-full" required>
                     </div>
                     <div>
                         <label for="">Phone Number</label>
-                        <input type="number" class="inputfield-full">
+                        <input type="text" id="phone" class="inputfield-full" required>
                     </div>
-                    <button class="button-style" type="submit">SAVE & CONTINUE</button>
-
+                    <button class="button-style" type="submit" onclick="contactfunction()">SAVE & CONTINUE</button>
                 </form>
             </div>
-            <div class="box-col">
-                <h2>Shipping & Billing Address</h2>
-                <form action="">
+            <div class="box-col hide" id="contact-info-id">
+                <h2>Contact Info</h2>
+                <p id="full-name">
+
+                </p>
+                <p id="display-email">
+
+                </p>
+                <p id="display-contact-info">
+
+                </p>
+            </div>
+
+            <!-- <div class="box-col"> -->
+            <div class="box-col show" id="billing-form-id">
+                <h2 style="font-weight: lighter;"> Shipping & Billing Address</h2>
+                <form action="" id="submitBilling">
                     <div class="username">
                         <div class="firstname">
                             <label for="">First Name</label>
-                            <input type="text" class="inputfield">
+                            <input type="text" id="billing-firstname" class="inputfield" required>
                         </div>
                         <div class="lastname">
                             <label for="">Last Name</label>
-                            <input type="text" class="inputfield">
+                            <input type="text" id="billing-lastname" class="inputfield" required>
                         </div>
                     </div>
+
                     <div>
                         <label for="">Country</label>
-                        <select name="" id="contry-style">
+                        <select name="" id="billing-country-style">
                             <option value="IND">🇮🇳 INDIA</option>
                             <option value="US">🇺🇸 United States</option>
                             <option value="AU">🇦🇺 Australia</option>
@@ -83,24 +102,24 @@
                     </div>
                     <div>
                         <label for="">Street Address</label>
-                        <input type="text" class="inputfield-full">
+                        <input type="text" id="billing-street-address" class="inputfield-full" required>
                     </div>
                     <div>
                         <label for="">Apt #, Floor, etc. (optional)</label>
-                        <input type="email" class="inputfield-full">
+                        <input type="text" id="billing-street-address2" class="inputfield-full" required>
                     </div>
                     <div class="username">
                         <div class="firstname-zipcode">
                             <label for="">Zip Code</label>
-                            <input type="text" class="inputfield">
+                            <input type="text" id="billing-zipcode" class="inputfield" required>
                         </div>
                         <div class="lastname-citytown">
                             <label for="">City/Town</label>
-                            <input type="text" class="inputfield">
+                            <input type="text" id="billing-citytown" class="inputfield" required>
                         </div>
                         <div>
                             <label for="">State</label>
-                            <select name="" id="contry-style">
+                            <select name="" id="billing-country-style2">
                                 <option value="UT">Uttar Pradesh</option>
                                 <option value="KT">Karnataka</option>
                                 <option value="MA">Maharashtra</option>
@@ -113,25 +132,48 @@
                             </select>
                         </div>
                     </div>
-                    <button class="button-style" type="submit">SAVE & CONTINUE</button>
+                    <button class="button-style" type="submit" onclick="billingFunction()">SAVE & CONTINUE</button>
 
                 </form>
             </div>
+            <div class="box-col hide" id="billing-info-id">
+                <h2>Billing & Shipping Address</h2>
+                <p id="billing-full-name">
+
+                </p>
+                <p id="billing-display-sa1">
+
+                </p>
+                <p id="billing-display-sa2">
+
+                </p>
+                <p id="display-billing-info">
+
+                </p>
+                <p id="display-billing-cs2">
+
+                </p>
+            </div>
+
+            <!-- </div> -->
             <div class="box-col">
-                <h2>Shipping Options</h2>
+                <h2 style="font-weight: lighter;">Shipping Options</h2>
                 <h4><i class="fa-solid fa-truck"></i> &nbsp;SHIP TO HOME</h4>
+
                 <div>
-                    <input type="radio">
-                    <label for="">Cash On Delivery</label>
+                    <input type="radio" id="COD" name="payment">
+                    <label for="COD">Cash On Delivery</label><br>
                 </div>
                 <div>
-                    <input type="radio">
-                    <label for="">Credit/Debit/UPI</label>
+                    <input type="radio" id="UPI" name="payment">
+                    <label for="UPI">Credit/Debit/UPI</label>
                 </div>
+
                 <button class="button-style" type="submit">SAVE & CONTINUE</button>
             </div>
+
             <div class="box-col">
-                <h2>Payment</h2>
+                <h2 style="font-weight: lighter;">Payment</h2>
                 <div class="username">
                     <div class="firstname-zipcode">
                         <label for="">Gift Card Number</label>
@@ -154,7 +196,7 @@
                     <i class="fa fa-cc-visa" style="color:navy;"></i>
                     <i class="fa fa-cc-amex" style="color:blue;"></i>
                     <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    <i class="fa fa-cc-discover" style="color:rgb(97, 53, 93);"></i>
                 </div>
                 <div>
                     <label for="">Card Number</label>
@@ -167,7 +209,7 @@
                 <div class="username">
                     <div class="payment-card-col1">
                         <label for="">Exp Month</label>
-                        <select name="" id="contry-style">
+                        <select name="" id="country-style">
                             <option value="UT">01</option>
                             <option value="KT">02</option>
                             <option value="MA">03</option>
@@ -184,7 +226,7 @@
                     </div>
                     <div class="payment-card-col2">
                         <label for="">Exp Year</label>
-                        <select name="" id="contry-style">
+                        <select name="" id="country-style">
                             <option value="UT">23</option>
                             <option value="KT">24</option>
                             <option value="MA">25</option>
@@ -206,25 +248,24 @@
                 </div>
             </div>
             <div class="box-col">
-                <h2>Review & Place Order</h2>
-                <form action="./orderconfirmation.html" method="POST">
-                    <input type="submit" class="button-style" />
-                </form>
+                <h2 style="font-weight: lighter;">Review & Place Order</h2>
+
+                <button class="button-style" onclick="document.location='./orderconfirmation.html'">Submit</button>
             </div>
         </div>
         <div class="order-details">
             <div class="box-col">
-                <h3><i class="fa-solid fa-tags"></i> Have a Promo Code?</h3>
+                <h3 style="font-weight: lighter;"><i class="fa-solid fa-tags"></i> Have a Promo Code?</h3>
                 Only one code can be used at a time.
             </div>
             <div class="box-col">
-                <h2>Order Summary</h2>
+                <h2 style="font-weight: lighter;">Order Summary</h2>
             </div>
             <div class="box-col">
-                <h2>Shopping Bag</h2>
+                <h2 style="font-weight: lighter;">Shopping Bag</h2>
             </div>
             <div class="box-col">
-                <h3>A Few Things You Should Know</h3>
+                <h3 style="font-weight: lighter;">A Few Things You Should Know</h3>
                 <p> <i class="fa fa-lock" aria-hidden="true"></i> All transactions are safe and secure.</p>
                 <p> <i class="fa fa-undo" aria-hidden="true"></i> Return In-Store or Online for up to 60 days.</p>
                 <p> <i class="fa fa-phone" aria-hidden="true"></i> Call us anytime at (888) 397-1980.</p>
@@ -233,5 +274,6 @@
     </div>
 
 </body>
+<script src="../expressjs/checkout.js"></script>
 
 </html>
