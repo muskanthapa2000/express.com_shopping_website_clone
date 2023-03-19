@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men's Section</title>
+    <title>Women's Section</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <!-- <style src="./expresscss/mens.css"></style> -->
 </head>
 <style>
+    body{
+        font-family: Arial;
+    }
     *{
     margin: 0;
     padding: 0;
@@ -228,18 +231,31 @@ img{
     
 }
 #side_sec{
-    width: 33%;
+    width: 40%;
     display: flex;
-
+    flex-direction: column;
+    padding: 20px;
 }
 #price_filter{
-    height: min-content;
-    width: max-content;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color:rgb(86, 90, 92);
+    border: rbg(86, 90, 92);
+    padding: 10px;
+    border: none;
+    margin-bottom: 8px;
 }
-option:hover{
-    background-color: black;
-    color: white;
-}
+#demo_filter{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color:rgb(86, 90, 92);
+    border: rbg(86, 90, 92);
+    padding: 10px;
+    border: none;
+    margin-bottom: 8px;
+    }
 
 </style>
 <body>
@@ -322,16 +338,48 @@ option:hover{
     </div>
 <div id="mainbody">
     <div id="side_sec">
-        <div>
-            <h3>filter by price :</h3>
-        </div>
-        <select name="filter by price" id="price_filter" onfocus="this.size=4" onblur="this.size=0" onchange="ths
-        .size=1" this.blur(); >
-            <option value="">select one</option>
+        <select id="price_filter">
+            <option value="">Filter by price</option>
             <option value="30-50">$30.00-$50.00</option>
             <option value="50-70">$50.00-$70.00</option>
             <option value="70-90">$70.00-$90.00</option>
         </select>
+        <hr>
+        <select id="demo_filter">
+            <option value="">Colours</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Pink">Pink</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="Orange">Orange</option>
+            <option value="Purple">Purple</option>
+            <option value="White">White</option>
+          </select>
+          <hr>
+          <select id="demo_filter">
+            <option value="">Sizes</option>
+            <option value="X">X</option>
+            <option value="XX">XX</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="XXL">XXL</option>
+          </select>
+           <hr>
+           <select id="demo_filter">
+            <option value="">Size Types</option>
+            <option value="Regular">Regular</option>
+           </select>
+           <hr>
+           <select id="demo_filter">
+            <option value="">Deal</option>
+            <option value="Up to 20%">Up to 20%</option>
+            <option value="Up to 30%">Up to 30%</option>
+            <option value="Up to 40%">Up to 40%</option>
+            <option value="Up to 50%">Up to 50%</option>
+            <option value="Up to 60%">Up to 60%</option>
+           </select>
     </div>
     <div id="parent">
 <!-- this section is appended using javascript methods -->
