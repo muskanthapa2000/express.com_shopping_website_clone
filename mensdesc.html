@@ -6,39 +6,40 @@
     <title>Express - Men's & Women's Clothing</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         body{
-            font-family: Arial;
+            font-family: 'Arial';
         }
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .topHeader{
-            background-color: #333;
-            height: 6%;
+        #topHeader{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            height: 40px;
             width: 100%;
+            padding: 0 50px 0px 50px;
         }
-        b{
-            font-weight: bold;
+
+        #topHeader p{
+            font-size: 13.5px;
             color: #ffffff;
-            font-size: 13px;
+            text-decoration: underline;
         }
         span{
             color: #ffffff;
         }
-        .topAnchor{
-            color: #ffffff;
-            font-size: 13px;
-        }
-        .topPara{
-            padding: 6px;
-            margin-left: 22px;
-        }
-        .online{
-            font-size: 13px;
-        }
+       
+
+        
+        
         .anchorLink{
             font-weight: bold;
             font-size: 12px;
@@ -51,16 +52,8 @@
             margin-left: 590px;
             font-weight: bold;
         }
-        ._8CIPI{
-            display: inline;
-            margin-left: 6px;
-            color: #996981;
-        }
-        .smallHeader{
-            display: flex;
-            margin-left: 12px;
-            margin-top: 9px;
-        }
+      
+        
         .material-symbols-outlined {
           font-variation-settings:
           'FILL' 0,
@@ -70,36 +63,30 @@
         }
         .expressHeader{
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             height: 61px;
             /* border: 2px dotted red; */
-            padding: 14px;
-            height: 67px;
+            padding: 0 50px 0px 50px;
+            
         }
-        .ExpressImg{
-            margin-left: 262px;
-            margin-top: 9px;
+        #details{
+            text-decoration-color: #eedac4;
         }
+
+       
+        
         .icons{
-            margin-left: 455px;
+            display: flex;
+            justify-content: space-around;
+
         }
-        #searchIcon{
-            margin-left: -77px;
-            height: 50px;
+        p>a{
+            margin:0 10px 0 10px;
         }
-        #personIcon{
-            margin-left: 49px;
-            height: 50px;
-        }
-        #shoppingIcon{
-            margin-left: 42px;
-            height: 50px;
-        }
-        i{
-            font-size: large;
-        }
-        .headIcons{
-            margin-top: 4px;
-        }
+       
+        
+        
         .hover-underline-animation{
             display: inline-block;
             position: relative;
@@ -114,32 +101,32 @@
             bottom: 0;
             left: 0;
             background-color:#212222;
-            transform-origin: bottom right;
+            transform-origin: bottom ;
             transition: transform 0.50s ease-out;
         }
 
         .hover-underline-animation:hover:after {
             transform: scaleX(1);
-            transform-origin: bottom left;
+            transform-origin: bottom center;
         }
         .hover-underline-animation:hover{
             cursor: pointer;
         }
-        .secondaryNav{
-            /* border: 1px solid red; */
-            height: 38px;
+        /* #secondaryNav{
+            
+             height: 38px;
             display: flex;
             justify-content: center;
             font-size: 15px;
             margin-left: 13px;
             align-items: center;
-            margin-top: 24px;
-        }
+            margin-top: 24px; 
+        } */
         .qwe{
             text-decoration: none;
-            margin-right: 34px;
+            /* margin-right: 34px; */
             color: #17171d;
-            height: 38px;
+            /* height: 38px; */
         }
         .mobileLink{
             display: block;
@@ -158,13 +145,12 @@
         .footer{
             display: flex;
             justify-content: space-evenly;
-            /* align-items: center; */
-            /* border: 1px dashed red; */
+            
             height: 100%;
         }
         .part1{
             margin-top: 128px;
-            margin-left: -13px;
+            
         }
         .googleBtn{
             margin-left: 26px;
@@ -174,12 +160,12 @@
             /* text-decoration: none; */
             color: #000000;
             /* border-bottom: 2px; */
-            font-size: 15px;
-            font-weight: bold;
+            font-size: 12px;
+            font-weight: bolder;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
         }
-        .socialMedia{
-            text-decoration: none;
-        }
+       
         .footer--app-badge-button{
             text-decoration: none;
         }
@@ -199,6 +185,152 @@
         .listStyle{
             margin: 3px 0 3px 0;
         }
+        .footerLink:hover{
+            text-decoration: underline;
+            color:#17171d;
+        }
+
+       .part1{
+        padding:auto;
+       }
+
+       
+     header{
+    width:100%;
+    border: 1px solid rgba(162, 161, 161, 0.474);
+    height: 70px;
+    position: relative;
+     }
+     .containerr{
+        display:flex;
+        justify-content: center;
+        width:80%;
+        margin :auto;
+        
+       
+        
+        
+
+     }
+     nav>ul{
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        
+
+     }
+     nav>ul>li{
+        padding: 20px 20px;
+        list-style: none;
+     }
+      
+     nav>ul>li>a{
+        text-decoration: none;
+        
+        
+        color: black;
+     }
+
+     .megamenu{
+        position: absolute;
+        top:70%;
+        left:0px;
+        width:100%;
+        opacity: 0;
+        visibility: hidden;
+        background-color: white;
+        display: flex;
+        justify-content:center;
+        transition: 0.3s;
+        height:400px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        
+        /* ma */
+        /* padding: 10%; */
+        /* padding: 0 10%; */
+        padding-left: 10%;
+        
+
+     }
+     nav>ul>li:hover .megamenu{
+        opacity: 100;
+        visibility: visible;
+        top:100%;
+
+     }
+
+     .megamenuitems h5{
+        padding: 4px 30px;
+     }
+
+     .megamenuitems ul li{
+        list-style: none;
+        font-size: 15px;
+        color: #696969;
+        padding: 4px 30px;
+        /* width: 50%; */
+     }
+     .megamenuitems h3{
+        padding: 60px;
+
+     }
+     #megamenuimg{
+        width:50%;
+     }
+     
+     nav>ul>li>a{
+        font-weight: 600;
+     }
+     
+
+
+
+
+        @media only screen and (min-width: 0px) and (max-width: 980px) {
+    
+       .secondaryNav{
+          display: none;
+          }
+        
+          .content {
+            display: none;
+
+          }
+          .containerr{
+            display: none;
+          }
+         
+        }
+
+        @media only screen and (min-width: 421px) and (max-width: 1080px) {
+    
+            .smallHeader{
+        display: none;
+       }
+       
+       #topHeader{
+        display: none;
+       }
+  
+  
+  }
+  
+  
+  
+  
+  /* small screens */
+  @media only screen and (min-width: 0px) and (max-width: 520px) {
+       .smallHeader{
+        display: none;
+       }
+       #topHeader{
+        display: none;
+       }
+      
+          
+  }
+
+        /* saperate */
         #parent{
             display: flex;
             flex-wrap: wrap;
@@ -241,72 +373,401 @@
     </style>
 </head>
 <body>
-    <div class="topHeader">
-        <p class="topPara">
-            <span>
-                <b>Limited Time Only! Styles From $20</b>
-            </span>
-            <span class="online">
-                &nbsp;Online only.&nbsp;
-            </span>
-            <span>
-                <a class ="topAnchor" href="/g/modal/disclaimer/sitewide-disclaimer" target="_blank" id="anc">Exclusions &amp; Details</a>
-            </span>
-            <span class="anchorLink">
-                <a class ="topAnchor" href="/womens-clothing/specialsale/cat3330002" target="_self">WOMEN</a>
-            </span>
-            <span class="anchorLink">
-                <a class ="topAnchor" href="/mens-clothing/limited-deals/cat5050118" target="_self">MEN</a>
-            </span>
-            <a style="color: #ffffff" href="#" title="By activating this link you will enable accessibility for all the data and features of the site"tabindex="100" class="access">
-                Enable Accessibility
-            </a>
-        </p>
+    <div id="topHeader">
+        <div> <p><span><b>All Bottoms $45</b></span><span>Online Only.Excludes men's dress pants</span><span ><b> WOMEN MEN</b></span></p>
+        </div>
+        <div></div>
+        <div>
+            <p id="accessibility">Enable Accessibility</p>
+        </div>
     </div>
     <div class="expressHeader">
         <div class="smallHeader">
-            <p id="secPara">Free Shipping on Orders $50+</p>
-            <a class="_8CIPI" href="https://www.google.com/">Details</a>
+            <p id="secPara">Free Shipping on Orders $50+<span><a id="details"class="_8CIPI" href="https://www.google.com/">Details</a></span></p>
+            
         </div>
         <div class="mainHeader">
             <img alt="Express" src="https://www.express.com/content/dam/logos-fonts/logos/express/express-logo.svg" width="164" height="27" class="ExpressImg">
         </div>
         <div class="headIcons">
-            <p class="icons">
-                <i class="material-icons fa-xl hover-underline-animation" id="searchIcon">search</i>
-                <i class="material-icons fa-xl hover-underline-animation" id="personIcon">person_outline</i>
-                <i class="material-icons fa-xl hover-underline-animation" id="shoppingIcon">shopping_cart</i>
-            </p>
+           
+                <p class="icons">
+                    <a href="#"><i class="material-icons fa-xl hover-underline-animation" id="searchIcon">search</i></a>
+                    <a href="signin.html"><i class="material-icons fa-xl hover-underline-animation" id="personIcon">person_outline</i></a>
+                    <a href="cart.html"><i class="material-icons fa-xl hover-underline-animation" id="shoppingIcon">shopping_cart</i></a>
+                </p>
+        
         </div>
     </div>
     <hr>
     <!-- Secondary NavBar -->
-    <div class="secondaryNav">
-        <h4>
-            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">WOMEN</a>
-        </h4>
-        <h4>
-            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">MEN</a>
-        </h4>
-        <h4>
-            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">JEANS</a>
-        </h4>
-        <h4>
-            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">NEW</a>
-        </h4>
-        <h4>
-            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">SALE</a>
-        </h4>
-        <h4>
-            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">STYLE TRIAL RENTAL</a>
-        </h4>
-        <h4>
-            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">COMMUNITY</a>
-        </h4>
-        <h4>
-            <a href="https://www.express.com/womens-clothing?ICID=W_HEADER_WOMENSCLOTHING" class="qwe hover-underline-animation">LABELS WE LOVE</a>
-        </h4>
+    
+    <header>
+        <div class="containerr">
+            <nav>
+                <ul>
+                    <li><a href="womens.html" class="qwe hover-underline-animation"> WOMEN</a>
+                    <div class="megamenu">
+                        <div class="megamenuitems">
+                            <h5 >CLOTHING</h5>
+                                <ul>
+                                    <li>Tops</li>
+                                    <li>Sweters</li>
+                                    <li>Dresses</li>
+                                    <li>Jeans</li>
+                                    <li>Pants</li>
+                                    <li>Shors</li>
+                                    <li>Skirts</li>
+                                    <li>Swimsuit</li>
+                                </ul>
+                            
+                        </div>
+                        <div class="megamenuitems">
+                            <h5>NEW & NOW</h5>
+                                <ul>
+                                    <li>New Arrival</li>
+                                    <li>Outfit Inspo</li>
+                                    <li>Mix & match</li>
+                                    <li>Express Icons</li>
+                                    <li>BBBSA Littles</li>
+                                    
+                                </ul>
+                            
+                        </div>
+                        <div class="megamenuitems">
+                            <h5>TOP SHOP</h5>
+                                <ul>
+                                    <li> All Tops</li>
+                                    <li>Shirts </li>
+                                    <li>Statement Tops</li>
+                                    <li>Essential Tees</li>
+                                    <li>Top $50</li>
+                                    <li>Blouses</li>
+                                    
+                                </ul>
+                            
+                        </div>
+                        <div class="megamenuitems">
+                            <h5>DRESS SHOP</h5>
+                                <ul>
+                                    <li>All dresses</li>
+                                    <li>Bridal Edit</li>
+                                    <li>Wedding Dresses</li>
+                                    <li>Spring Dresses</li>
+                                    <li>Under $100</li>
+                                    
+                                </ul>
+                            
+                        </div>
+                        
+                        <div>
+                            <img id="megamenuimg" src="https://www.express.com/content/dam/express/2023/projects/web/site-experiences/03-march/-0227-floorset/22697-dg-vis-cards/w-nav-01.jpg" alt="">
+                        </div>
+
+                        
+                        
+                    </div>
+                </li>
+                    <li><a href="mens.html"class="qwe hover-underline-animation">MEN</a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h5 >CLOTHING</h5>
+                                    <ul>
+                                        <li>Full Suits</li>
+                                        <li>Suit Jackets</li>
+                                        <li>Jeans</li>
+                                        <li>Tops</li>
+                                        <li>Polos</li>
+                                        <li>Sweters</li>
+                                        <li>T-Shirts</li>
+                                        <li>Jackets</li>
+                                        <li>Pants</li>
+                                        <li>Chinos</li>
+                                        <li>Joggers</li>
+                                        <li>Shorts</li>
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>NEW & NOW</h5>
+                                    <ul>
+                                        <li>New Arrival</li>
+                                        <li>Modern</li>
+                                        <li>Mix & match</li>
+                                        <li>Express Icons</li>
+                                        <li>BBBSA Littles</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>SUIT SHOP</h5>
+                                    <ul>
+                                        <li> All Suits</li>
+                                        <li>Suit Jackets </li>
+                                        <li>Statement Tops</li>
+                                        <li>Chino</li>
+                                        <li>Top $50</li>
+                                        <li>Wedding Shop</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>SHIRT SHOP</h5>
+                                    <ul>
+                                        <li>All Shirts</li>
+                                        <li>Casual Shirts</li>
+                                        <li>Icons</li>
+                                        <li>Short Sleeve</li>
+                                        <li>Under $100</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            
+                            <div>
+                                <img id="megamenuimg" src="https://www.express.com/content/dam/express/2023/projects/web/site-experiences/03-march/-0227-floorset/22697-dg-vis-cards/m-nav-01.jpg" alt="">
+                            </div>
+    
+                            
+                            
+                        </div>
+                    </li>
+                    <li><a href="#"class="qwe hover-underline-animation">JEANS</a>
+                        <div class="megamenu">
+                           
+                            <div class="megamenuitems">
+                                <h5>NEW & NOW</h5>
+                                    <ul>
+                                        <li>New Arrival</li>
+                                        <li>Modern</li>
+                                        <li>Mix & match</li>
+                                        <li>Express Icons</li>
+                                        <li>BBBSA Littles</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>SUIT SHOP</h5>
+                                    <ul>
+                                        <li> All Suits</li>
+                                        <li>Suit Jackets </li>
+                                        <li>Statement Tops</li>
+                                        <li>Chino</li>
+                                        <li>Top $50</li>
+                                        <li>Wedding Shop</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                           
+                            
+                            <div>
+                                <img id="megamenuimg" src="https://www.express.com/content/dam/express/2023/projects/web/site-experiences/03-march/-0227-floorset/22697-dg-vis-cards/dg-jeans-nav-01.jpg" alt="">
+                            </div>
+    
+                            
+                            
+                        </div>
+                    </li>
+                    <li><a href="#"class="qwe hover-underline-animation">ICONS</a>
+                        <div class="megamenu">
+                           
+                            <div class="megamenuitems">
+                                <h5>NEW & NOW</h5>
+                                    <ul>
+                                        <li>New Arrival</li>
+                                        <li>Modern</li>
+                                        <li>Mix & match</li>
+                                        <li>Express Icons</li>
+                                        <li>BBBSA Littles</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>SUIT SHOP</h5>
+                                    <ul>
+                                        <li> All Suits</li>
+                                        <li>Suit Jackets </li>
+                                        <li>Statement Tops</li>
+                                        <li>Chino</li>
+                                        <li>Top $50</li>
+                                        <li>Wedding Shop</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                           
+                            
+                            <div>
+                                <img id="megamenuimg" src="https://www.express.com/content/dam/express/2023/projects/web/site-experiences/03-march/-0227-floorset/22697-dg-vis-cards/w-icons-nav-01.jpg" alt="">
+                            </div>
+    
+                            
+                            
+                        </div></li>
+                    <li><a href="#"class="qwe hover-underline-animation">SALE</a>
+                        <div class="megamenu">
+                           
+                            <div class="megamenuitems">
+                                <h5>NEW & NOW</h5>
+                                    <ul>
+                                        <li>New Arrival</li>
+                                        <li>Modern</li>
+                                        <li>Mix & match</li>
+                                        <li>Express Icons</li>
+                                        <li>BBBSA Littles</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>SUIT SHOP</h5>
+                                    <ul>
+                                        <li> All Suits</li>
+                                        <li>Suit Jackets </li>
+                                        <li>Statement Tops</li>
+                                        <li>Chino</li>
+                                        <li>Top $50</li>
+                                        <li>Wedding Shop</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                           
+                            
+                            <div>
+                                <img id="megamenuimg" src="https://www.express.com/content/dam/express/2022/projects/web/header-nav/04-april/0425-digital-17444-sale-nav/dg-nav-sale.jpg" alt="">
+                            </div>
+    
+                            
+                            
+                        </div></li>
+                    <li><a href="#"class="qwe hover-underline-animation">STYLE TRIAL RENTAL</a>
+                        <div class="megamenu">
+                           
+                            <div class="megamenuitems">
+                                <h5>NEW & NOW</h5>
+                                    <ul>
+                                        <li>New Arrival</li>
+                                        <li>Modern</li>
+                                        <li>Mix & match</li>
+                                        <li>Express Icons</li>
+                                        <li>BBBSA Littles</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>SUIT SHOP</h5>
+                                    <ul>
+                                        <li> All Suits</li>
+                                        <li>Suit Jackets </li>
+                                        <li>Statement Tops</li>
+                                        <li>Chino</li>
+                                        <li>Top $50</li>
+                                        <li>Wedding Shop</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                           
+                            
+                            <div>
+                                <img id="megamenuimg" src="https://www.express.com/content/dam/express/2023/projects/web/category-inline/january/1227-digital-20752-dg-visual-card/1227-DIGITAL-20752-dg-style-trial.gif" alt="">
+                            </div>
+    
+                            
+                            
+                        </div></li>
+                    <li><a href="#"class="qwe hover-underline-animation">COMMUNITY</a>
+                        <div class="megamenu">
+                           
+                            <div class="megamenuitems">
+                                <h5>NEW & NOW</h5>
+                                    <ul>
+                                        <li>New Arrival</li>
+                                        <li>Modern</li>
+                                        <li>Mix & match</li>
+                                        <li>Express Icons</li>
+                                        <li>BBBSA Littles</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>SUIT SHOP</h5>
+                                    <ul>
+                                        <li> All Suits</li>
+                                        <li>Suit Jackets </li>
+                                        <li>Statement Tops</li>
+                                        <li>Chino</li>
+                                        <li>Top $50</li>
+                                        <li>Wedding Shop</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                           
+                            
+                            <div>
+                                <img id="megamenuimg" src="https://www.express.com/content/dam/express/2023/projects/web/site-experiences/03-march/-0227-floorset/22697-dg-vis-cards/styling-community-01.jpg" alt="">
+                            </div>
+    
+                            
+                            
+                        </div></li>
+                    <li><a href="#"class="qwe hover-underline-animation">LABELS WE LOVE</a>
+                        <div class="megamenu">
+                           
+                            <div class="megamenuitems">
+                                <h5>NEW & NOW</h5>
+                                    <ul>
+                                        <li>New Arrival</li>
+                                        <li>Modern</li>
+                                        <li>Mix & match</li>
+                                        <li>Express Icons</li>
+                                        <li>BBBSA Littles</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                            <div class="megamenuitems">
+                                <h5>SUIT SHOP</h5>
+                                    <ul>
+                                        <li> All Suits</li>
+                                        <li>Suit Jackets </li>
+                                        <li>Statement Tops</li>
+                                        <li>Chino</li>
+                                        <li>Top $50</li>
+                                        <li>Wedding Shop</li>
+                                        
+                                    </ul>
+                                
+                            </div>
+                           
+                            
+                            <div>
+                                <img id="megamenuimg" src="https://www.express.com/content/dam/express/2023/projects/web/site-experiences/03-march/23975-lwl-vis-nav/lwl-vis-nav-card.gif" alt="">
+                            </div>
+    
+                            
+                            
+                        </div></li>
+
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+
+        
+      
     </div>
+
     <div id="parent" >
         <!-- append the data here -->
     </div>
@@ -321,6 +782,7 @@
     <!-- Footer section of the website -->
     <div class="footer">
         <div class="part1">
+            <div id="applegstore">
             <a href="https://itunes.apple.com/us/app/express/id386656478?mt=8" rel="noopener noreferer" target="_blank" class="footer--app-badge-button" aria-label="Download the Express App. Download on the App Store">
                 <svg viewBox="0 0 2700 800" xmlns="http://www.w3.org/2000/svg" class="svgStore">
                     <path d="M1303 211s0-21 21-21c20 0 19 22 19 22v57h21v-57s1-40-33-40c-22 0-30 17-30 17l-1-15h-19l1 27v68h21v-58zm946 0s0-21 21-21c20 0 19 22 19 22v57h21v-57s1-40-33-40c-22 0-28 17-28 17v-58h-21v138h21v-58zm-820 423c113 0 113-200 6-200-49 0-66 36-66 36l-2-32h-38l2 43v227h43V607s13 27 55 27zm-8-166c67 0 67 133-1 133-45 0-46-47-46-47v-35s1-51 47-51zm-323-247c0-65-92-65-92 1 0 67 92 65 92-1zm-22 0c0 46-49 47-49 1 0-45 49-46 49-1zm469 0c0-65-92-65-92 1 0 67 92 65 92-1zm-22 0c0 46-49 47-49 1 0-45 49-46 49-1zm474-10s0-21 21-21c20 0 19 22 19 22v57h21v-57s1-40-33-40c-22 0-30 17-30 17l-1-15h-19l1 27v68h21v-58zM658 298s-33-51-101-51c-38 0-70 24-90 24-24 0-46-22-85-22-75 0-137 71-125 179 11 97 80 207 131 207 32 0 46-21 85-21s50 20 84 20c57 0 104-101 114-135-79-32-99-147-13-201zm-93-174c-55 4-108 58-102 118 59 2 108-58 102-118zm508 506l-86-266h-53l-86 266h44l24-78h87l24 78h46zm-78-111h-71l35-117zm213 115c113 0 113-200 6-200-49 0-66 36-66 36l-2-32h-38l2 46v224h43V607s13 27 55 27zm-8-166c68 0 68 133-1 133-45 0-46-47-46-47v-35s1-51 47-51zm465 166c55 0 96-27 96-79 0-42-30-63-67-78-24-10-51-20-51-47 0-23 21-35 46-35 29 0 51 12 51 12l11-34s-22-13-61-13c-49 0-90 28-90 75 0 33 23 59 70 76 26 9 48 21 48 48s-22 40-51 40c-37 0-61-17-61-17l-10 35s21 17 69 17zm148-67c0 43 15 67 54 67 21 0 33-5 33-5l-1-32s-8 2-19 2c-17 0-25-12-25-36v-93h47v-32h-47v-48l-42 13v35h-28v32h28v97zm301-34c0-133-188-134-188 3 0 133 188 131 188-3zm-44 1c0 92-101 93-101 1 0-91 101-93 101-1zm124-10s1-50 45-50c7 0 13 1 13 1v-40s-6-1-10-1c-42 0-53 43-53 43l-2-39h-37l1 41v151h43V524zm174 110c37 0 64-12 64-12l-6-30s-19 9-52 9c-63 0-60-57-60-57h128c6-60-18-110-79-110-65 0-90 57-90 102 0 52 29 98 95 98zm-54-120c0-10 10-51 46-51 45 0 42 51 42 51h-88zM981 200c0-42-26-63-71-63-20 0-36 3-36 3v128s18 2 30 2c48 0 77-23 77-70zm-22 1c0 33-17 52-50 52-9 0-15-1-15-1v-97s10-1 17-1c32 0 48 16 48 47zm296-27h-20l-19 75-20-75h-17l-22 75-17-75h-21l28 95h20l20-70 19 70h20zm146 95h21V131h-21v138zm168-26c0 31 41 37 57 15l2 11h19l-2-18v-40c0-26-12-39-37-39-20 0-32 8-32 8l4 14s9-7 25-7c14 0 19 7 19 21-28-1-55 9-55 35zm21-2c0-23 35-19 35-19v14c0 22-35 28-35 5zm125 30c24 0 31-17 31-17l1 15h19s-1-14-1-26V131h-21v54s-7-13-27-13c-54 0-56 99-2 99zm7-82c22 0 22 24 22 24v16s0 25-23 25c-32 0-34-65 1-65zm223 32c0-65-92-65-92 1 0 67 92 65 92-1zm-22 0c0 46-49 47-49 1 0-45 49-46 49-1zm232 17c0 20 8 33 26 33 12 0 17-3 17-3l-1-16s-3 1-9 1c-8 0-12-5-12-17v-46h23v-16h-23v-23l-21 6v17h-14v16h14v48zm232 32c20 0 32-5 32-5l-3-15s-8 4-26 4c-31 0-30-27-30-27h63c5-23-6-55-38-55-29 0-45 25-45 51 0 24 13 47 47 47zm-27-58s2-25 23-25c23 0 21 25 21 25h-44z"></path>
@@ -331,12 +793,16 @@
                     <path d="M499 400L235 600c-8-3-14-12-14-25V226c0-14 6-23 15-26l263 200z" fill="url(#goo1)"></path> <path d="M499 466L258 597c-9 5-17 5-23 3l211-213 53 79z" fill="url(#goo2)"></path> <path d="M236 200c6-2 14-1 22 4l240 131-53 77-209-212z" fill="url(#goo3)"></path> <path d="M498 335l85 46c20 11 20 28 0 39l-84 46-66-66 65-65z" fill="url(#goo4)"></path> <path d="M1293 264c35 0 61-27 61-61 0-35-27-62-61-62s-61 28-61 62 27 61 61 61zm0-14c-26 0-45-21-45-47s19-48 45-48 46 22 46 48-20 47-46 47zm-14 373c50 0 89-38 89-88s-39-89-89-89-89 39-89 89 39 88 89 88zm0-35c-28 0-50-24-50-53 0-30 21-54 50-54 30 0 50 23 50 54 0 29-22 53-50 53zm240 13v15c0 32-16 51-47 51-34 0-44-31-44-31l-34 14s19 52 78 52c54 0 84-35 84-92V452h-37v15c-7-10-26-21-47-21-47 0-85 41-85 89 0 47 38 88 85 88 21 0 39-9 47-22zm1030-156c0-1-46-1-46-1l-47 118-51-118-44 1 74 167-41 87h44l111-254zm-244 150h2v24h39V514c0-54-38-80-84-80-56 0-73 41-73 41l34 16s10-21 39-21c21 0 44 13 44 39-32-18-123-13-123 53 0 49 49 63 68 63 25 0 41-10 54-30zm-570 28c35 0 60-19 74-39l-31-20s-12 24-43 24c-19 0-34-9-43-27l118-49c-11-33-36-66-79-66-49 0-84 39-84 89s38 88 88 88zm-650 0c50 0 89-38 89-88s-39-89-89-89-89 39-89 89 39 88 89 88zm-233 0c80 0 140-60 126-150H852v38h89c-5 47-40 74-89 74-56 0-99-44-99-99 0-57 44-100 99-100 26 0 48 9 67 27l27-27c-27-24-58-38-94-38-75 0-140 62-140 138s64 137 140 137zm1299-4V361h-39v258h39zm-156-258h-90v258h39V519h51c48 0 83-32 83-79s-35-79-83-79zm-370 257V358h-39v260h39zm-150-30c-29 0-49-24-49-53 0-30 20-54 49-54s47 24 47 54c0 29-19 53-47 53zm-390 0c-28 0-50-24-50-53 0-30 21-54 50-54 30 0 50 23 50 54 0 29-22 53-50 53zm1171-2c-14 0-32-6-32-23 0-36 65-36 83-19 0 10-19 42-51 42zm-571-54c0-35 28-52 47-52 12 0 27 6 33 19l-80 33zm311-133c27 0 42 23 42 41s-13 41-42 41h-52v-82h52zM843 199h-58v14h43c-1 23-20 37-43 37-25 0-46-20-46-47 0-30 23-48 46-48s33 14 33 14l10-10s-13-18-43-18c-34 0-61 27-61 62 0 33 26 61 61 61 34 0 63-25 58-65zm544 63v-97l60 97h16V144h-15v69l1 23h-1l-57-92h-19v118h15zm-198-104v-14h-81v14h33v104h15V158h33zm-97 104V144h-15v118h15zm-67-104v-14h-81v14h33v104h15V158h33zm-94 0v-14h-69v118h69v-15h-54v-37h49v-14h-49v-38h54z"></path> <defs> <linearGradient id="goo1" gradientTransform="rotate(90)"><stop offset="0%" stop-color="#3588b7"></stop><stop offset="100%" stop-color="#66ffd4"></stop></linearGradient> <linearGradient id="goo2"><stop offset="0%" stop-color="#9635c2"></stop><stop offset="100%" stop-color="#e3424f"></stop></linearGradient> <linearGradient id="goo3"><stop offset="0%" stop-color="#60cab6"></stop><stop offset="100%" stop-color="#d6ffa2"></stop></linearGradient> <linearGradient id="goo4" gradientTransform="rotate(45)"><stop offset="0%" stop-color="#ff9877"></stop><stop offset="100%" stop-color="#ffc466"></stop></linearGradient></defs>
                 </svg>
              </a>
+            </div>
+            <div id="signformobile">
              <a href="https://express.3c.com/textme" target="_blank" rel="noopener noreferer" class="mobileLink">
                 SIGN UP FOR MOBILE ALERTS
             </a>
             <a href="/g/subscribe" target="_blank" rel="noopener noreferer" class="mobileLink">
                 SIGN UP FOR EMAIL
             </a>
+            </div>
+            <div id="socialmediabtn">
                 <a href="http://www.instagram.com/express" rel="noopener noreferer" target="_blank" aria-haspopup="true" aria-label="Express on instagram. " title="Express on instagram" class="socialMedia">
                    <svg viewBox="0 0 24 24" class="svgIcons">
                       <path d="M9.66373961,0.000507893305 C10.9489811,0.0043365502 11.2791289,0.017203348 12.0047009,0.0501549032 C12.9093122,0.0917366276 13.5271624,0.235311261 14.0677324,0.445573566 C14.6267398,0.662504638 15.1010134,0.953576709 15.5733256,1.42588233 C16.0460301,1.89858024 16.3371062,2.37245499 16.5540403,2.93145458 C16.7639132,3.47240928 16.9078822,4.09025094 16.9490722,4.99484959 C16.9856646,5.79296764 16.9976504,6.11293289 17,7.75119032 L17,9.24800971 C16.9976504,10.8867289 16.9856646,11.2063904 16.9490722,12.0045084 C16.9078822,12.9094993 16.7639132,13.527341 16.5540403,14.0679034 C16.3371062,14.626903 16.0460301,15.10117 15.5733256,15.5734757 C15.1010134,16.0461736 14.6267398,16.3368534 14.0677324,16.5541767 C13.5271624,16.7640467 12.9093122,16.9080136 12.0047009,16.9488108 C11.1702931,16.987066 10.8588338,16.9984271 9.0163541,17 L7.98297888,17 C6.70143099,16.9989058 6.16052286,16.9930748 5.66920067,16.9767483 L5.48592948,16.9701226 C5.33289091,16.9641725 5.176259,16.9571272 4.99494446,16.9488108 C4.09033322,16.9080136 3.47248295,16.7640467 2.93152072,16.5541767 C2.37251334,16.3368534 1.89863199,16.0461736 1.4259275,15.5734757 C0.953223012,15.10117 0.662539172,14.626903 0.445605079,14.0679034 C0.235339846,13.527341 0.0913709266,12.9094993 0.0501809089,12.0045084 C0.016915066,11.2789465 0.00423638626,10.9488033 0.000495548081,9.66357971 L0.000495548081,7.33572807 C0.00423638626,6.05080571 0.016915066,5.72041145 0.0501809089,4.99484959 C0.0913709266,4.09025094 0.235339846,3.47240928 0.445605079,2.93145458 C0.662539172,2.37245499 0.953223012,1.89858024 1.4259275,1.42588233 C1.89863199,0.953576709 2.37251334,0.662504638 2.93152072,0.445573566 C3.47248295,0.235311261 4.09033322,0.0917366276 4.99494446,0.0501549032 C5.72020261,0.017203348 6.0505387,0.0043365502 7.33566725,0.000507893305 Z M9.47995441,1.53184163 L7.51932773,1.53184163 C6.12285355,1.53478374 5.81174905,1.54644318 5.06477135,1.58044082 C4.23587128,1.61809974 3.78552709,1.75657473 3.48621296,1.87308201 C3.08961193,2.02724822 2.80638152,2.21162001 2.50902882,2.50896857 C2.21167612,2.80631713 2.02730176,3.08954359 1.87274112,3.48653138 C1.7566245,3.78584134 1.61814758,4.23617926 1.58009585,5.06506778 C1.54269793,5.88637222 1.5323296,6.18093668 1.53086125,7.97229861 L1.53086125,9.02683986 C1.5323296,10.8187537 1.54269793,11.1130185 1.58009585,11.9346825 C1.61814758,12.763571 1.7566245,13.2135167 1.87274112,13.5132189 C2.02730176,13.9098144 2.21167612,14.1930409 2.50902882,14.4903894 C2.80638152,14.7881303 3.08961193,14.9721098 3.48621296,15.126276 C3.78552709,15.2427833 4.23587128,15.3812583 5.06477135,15.4193095 C5.84875469,15.455007 6.15278851,15.4660766 7.7371132,15.4682863 L9.26214066,15.4682863 C10.8464707,15.4660766 11.1505474,15.455007 11.934874,15.4193095 C12.7633818,15.3812583 13.213726,15.2427833 13.5130401,15.126276 C13.9100334,14.9721098 14.1932639,14.7881303 14.4902243,14.4903894 C14.7879692,14.1930409 14.9723436,13.9098144 15.126512,13.5132189 C15.2426286,13.2135167 15.3814978,12.763571 15.4191572,11.9346825 C15.4531553,11.1877152 15.4650874,10.876615 15.4681203,9.47993328 L15.4681203,7.51933572 C15.4650874,6.12302628 15.4531553,5.81170818 15.4191572,5.06506778 C15.3814978,4.23617926 15.2426286,3.78584134 15.126512,3.48653138 C14.9723436,3.08954359 14.7879692,2.80631713 14.4902243,2.50896857 C14.1932639,2.21162001 13.9100334,2.02724822 13.5130401,1.87308201 C13.213726,1.75657473 12.7633818,1.61809974 11.934874,1.58044082 C11.1878963,1.54644318 10.8765194,1.53478374 9.47995441,1.53184163 Z M8.49962654,4.13442172 C10.9106156,4.13442172 12.8649839,6.08876277 12.8649839,8.49971822 C12.8649839,10.9106737 10.9106156,12.8650147 8.49962654,12.8650147 C6.08863751,12.8650147 4.13466152,10.9106737 4.13466152,8.49971822 C4.13466152,6.08876277 6.08863751,4.13442172 8.49962654,4.13442172 Z M8.49962654,5.66627675 C6.93479816,5.66627675 5.66614561,6.93491163 5.66614561,8.49971822 C5.66614561,10.0645248 6.93479816,11.3331597 8.49962654,11.3331597 C10.0644549,11.3331597 11.3334998,10.0645248 11.3334998,8.49971822 C11.3334998,6.93491163 10.0644549,5.66627675 8.49962654,5.66627675 Z M13.0371974,2.94185001 C13.6009122,2.94185001 14.0575329,3.3988567 14.0575329,3.96217138 C14.0575329,4.52548607 13.6009122,4.98210048 13.0371974,4.98210048 C12.4738748,4.98210048 12.0172541,4.52548607 12.0172541,3.96217138 C12.0172541,3.3988567 12.4738748,2.94185001 13.0371974,2.94185001 Z"></path>
@@ -372,6 +838,7 @@
                        <path d="M8,0 C3.5826087,0 0,3.5826087 0,8 C0,12.4173913 3.5826087,16 8,16 C12.4173913,16 16,12.4173913 16,8 C16,3.5826087 12.4173913,0 8,0 Z M11.6695652,11.5373913 C11.5269565,11.773913 11.2173913,11.8469565 10.9843478,11.7043478 C9.10608696,10.5565217 6.74086957,10.2956522 3.95478261,10.9321739 C3.68695652,10.9947826 3.41913043,10.8243478 3.35652174,10.5565217 C3.29391304,10.2886957 3.46086957,10.0208696 3.73217391,9.95826087 C6.77913043,9.2626087 9.39478261,9.56173913 11.5026087,10.8486957 C11.7391304,10.9982609 11.8121739,11.3043478 11.6695652,11.5373913 Z M12.6469565,9.36 C12.466087,9.65217391 12.0834783,9.74608696 11.7878261,9.56521739 C9.63826087,8.24347826 6.35826087,7.86086957 3.81565217,8.63304348 C3.48521739,8.73391304 3.1373913,8.54608696 3.03652174,8.21913043 C2.93565217,7.88869565 3.12347826,7.54086957 3.45391304,7.44 C6.35826087,6.56 9.97217391,6.98434783 12.4417391,8.50434783 C12.7373913,8.68521739 12.8278261,9.06782609 12.6469565,9.36 Z M12.733913,7.09217391 C10.1565217,5.56173913 5.9026087,5.41913043 3.44,6.16695652 C3.04347826,6.28521739 2.62608696,6.0626087 2.50782609,5.66956522 C2.38956522,5.27304348 2.61217391,4.85565217 3.00521739,4.7373913 C5.82956522,3.87826087 10.5286957,4.04521739 13.4991304,5.80869565 C13.853913,6.02086957 13.9721739,6.48 13.76,6.83478261 C13.5478261,7.18608696 13.0852174,7.30434783 12.733913,7.09217391 Z"></path>
                     </svg>
                  </a>
+                </div>
         </div>
         <div class="part2 content">
             <h4>Store Locator</h4>
