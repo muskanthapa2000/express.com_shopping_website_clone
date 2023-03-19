@@ -103,3 +103,69 @@ function showbillingInfo() {
     }
 }
 showbillingInfo();
+
+
+
+function showOrderSummary() {
+    if (localStorage.getItem("cartData")) {
+        var showCartData = JSON.parse(localStorage("cartData"));
+        document.getElementById("cartDataName").innerHTML = showCartData.name;
+
+    }
+
+}
+
+function showCartSummary() {
+    if (localStorage.getItem("promo-value")) {
+
+        var cartSummary = JSON.parse(localStorage.getItem("promo-value"));
+        document.getElementById("shoppingBagData").innerHTML = "Total Cart Value :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ " + cartSummary.cartTotalValue;
+    }
+    if (localStorage.getItem("cartData")) {
+        var arr = JSON.parse(localStorage.getItem("cartData"))
+        arr.map(function (cartItemLocal) {
+            document.getElementById("shoppingBagData2").append(cartItemLocal.name)
+
+            document.getElementById("shoppingBagData3").append(cartItemLocal.selected);
+
+        })
+    }
+    // console.log(arr, typeof (arr));
+
+}
+showCartSummary();
+
+function applyGiftCard() {
+    var gift = document.getElementById("inputfield-giftcard-number").value;
+    // console.log(gift);
+    if (gift == "blackfriday") {
+        var giftPara = document.createElement("p")
+        giftPara.textContent = "Gift Card Applied SuccessFully";
+        document.getElementById("giftPromoApplied").append(giftPara.textContent);
+        // console.log(giftPara.textContent);
+    }
+    else {
+        var giftPara2 = document.createElement("p")
+        giftPara2.textContent = "Please Enter Valid Gift Card value";
+        document.getElementById("giftPromoApplied").append(giftPara2.textContent);
+    }
+}
+// applyGiftCard();
+
+
+function radioButtonClick() {
+    console.log("radioButtonClick");
+    var radioele = document.getElementById("COD");
+    if (radioele.checked) {
+        var paymentBlock = document.getElementById("paymentBlock")
+        paymentBlock.classList.remove("show");
+        paymentBlock.classList.add("hide");
+    } else {
+        var paymentBlock = document.getElementById("paymentBlock")
+        paymentBlock.classList.remove("hide");
+        paymentBlock.classList.add("show");
+    }
+}
+radioButtonClick()
+
+
