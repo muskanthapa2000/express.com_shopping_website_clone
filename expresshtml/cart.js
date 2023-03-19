@@ -158,7 +158,6 @@ function check() {
     var cartDataObj = { cartTotalValue: anss.textContent }
     localStorage.setItem("promo-value", JSON.stringify(cartDataObj));
 
-
   }
 }
 
