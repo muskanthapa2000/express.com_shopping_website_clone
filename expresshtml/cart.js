@@ -151,6 +151,10 @@ function check() {
     var anss = document.getElementById("pr");
     anss.textContent = t - change;
 
+
+    localStorage.setItem("promoVal", anss.textContent);
+    anss.textContent = localStorage.getItem("promoVal");
+
     var cartDataObj = { cartTotalValue: anss.textContent }
     localStorage.setItem("promo-value", JSON.stringify(cartDataObj));
 
