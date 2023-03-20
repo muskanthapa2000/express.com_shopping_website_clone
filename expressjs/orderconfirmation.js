@@ -7,7 +7,7 @@ function showOrderDetails() {
     if (localStorage.getItem("promo-value")) {
 
         var orderConfirmDetails = JSON.parse(localStorage.getItem("promo-value"));
-        document.getElementById("order-confirm-details").innerHTML = "Your Total Amount is :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ " + orderConfirmDetails.cartTotalValue;
+        document.getElementById("order-confirm-details").innerHTML = "Your Total Amount is :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ $" + orderConfirmDetails.cartTotalValue;
     }
 }
 showOrderDetails();
