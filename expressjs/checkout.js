@@ -119,26 +119,6 @@ function showCartSummary() {
     if (localStorage.getItem("promo-value")) {
 
         var cartSummary = JSON.parse(localStorage.getItem("promo-value"));
-<<<<<<< HEAD
-        document.getElementById("shoppingBagData").innerHTML = "Total Cart Value :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ " + cartSummary.cartTotalValue;
-    }
-    if (localStorage.getItem("cartData")) {
-        var cartDataMap = localStorage.getItem("cartData");
-        console.log(cartDataMap);
-
-        cartDataMap[0].map(function (ele) {
-            return console.log(ele);
-        });
-
-        var cartDataSummary = JSON.parse(localStorage.getItem("cartData"));
-        console.log(cartDataSummary.name);
-        document.getElementById("shoppingBagData2").innerHTML = cartDataSummary.name;
-
-    }
-}
-showCartSummary();
-
-=======
         console.log(cartSummary);
         document.getElementById("shoppingBagData").innerHTML = "Total Cart Value :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ " + cartSummary.cartTotalValue;
     }
@@ -189,5 +169,4 @@ function radioButtonClick() {
 }
 radioButtonClick()
 
->>>>>>> eaff0a0bc3fe5bea4df28d6a0b0778ac0297fc55
 

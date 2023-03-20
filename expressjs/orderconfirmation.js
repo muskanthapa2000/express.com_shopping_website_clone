@@ -7,13 +7,7 @@ function showOrderDetails() {
     if (localStorage.getItem("promo-value")) {
 
         var orderConfirmDetails = JSON.parse(localStorage.getItem("promo-value"));
-<<<<<<< HEAD
-        document.getElementById("order-confirm-details").innerHTML = "Total Amount Paid :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ " + orderConfirmDetails.cartTotalValue;
-    }
-}
-showOrderDetails();
-=======
-        document.getElementById("order-confirm-details").innerHTML = "Your Total Amount is :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ " + orderConfirmDetails.cartTotalValue;
+        document.getElementById("order-confirm-details").innerHTML = "Your Total Amount is :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ $" + orderConfirmDetails.cartTotalValue;
     }
 }
 showOrderDetails();
@@ -31,4 +25,3 @@ function showOrderConfirm() {
     }
 }
 showOrderConfirm();
->>>>>>> eaff0a0bc3fe5bea4df28d6a0b0778ac0297fc55

@@ -152,25 +152,8 @@ function check() {
     anss.textContent = t - change;
 
 
-<<<<<<< HEAD
-function check() {
-  var ch = document.getElementById("promo").value;
-  console.log(ch);
-  if (ch == "pw11") {
-    var temp = document.createElement("p");
-    temp.setAttribute("class", "krp");
-    temp = "Congrats You are eligible for 30% off";
-    document.getElementById("Offer").append(temp);
-    var t = parseInt(document.getElementById("pr").textContent);
-    var change = (t * 3) / 10;
-    var anss = document.getElementById("pr");
-    anss.textContent = t - change;
-    // localStorage.setItem("promoVal", anss.textContent);
-    // anss.textContent = localStorage.getItem("promoval");
-=======
     localStorage.setItem("promoVal", anss.textContent);
     anss.textContent = localStorage.getItem("promoVal");
->>>>>>> eaff0a0bc3fe5bea4df28d6a0b0778ac0297fc55
 
     var cartDataObj = { cartTotalValue: anss.textContent }
     localStorage.setItem("promo-value", JSON.stringify(cartDataObj));
