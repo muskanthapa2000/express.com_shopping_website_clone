@@ -119,6 +119,7 @@ function showCartSummary() {
     if (localStorage.getItem("promo-value")) {
 
         var cartSummary = JSON.parse(localStorage.getItem("promo-value"));
+        console.log(cartSummary);
         document.getElementById("shoppingBagData").innerHTML = "Total Cart Value :- " + " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\ " + cartSummary.cartTotalValue;
     }
     if (localStorage.getItem("cartData")) {
