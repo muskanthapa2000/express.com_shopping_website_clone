@@ -27,6 +27,7 @@ function displayCart(cart) {
 
     var h3 = document.createElement("h3");
     h3.textContent = elem.name;
+    h3.style="margin-top:50px"
 
     var p = document.createElement("p");
     p.textContent = elem.color;
@@ -40,13 +41,14 @@ function displayCart(cart) {
     diva.setAttribute("id", "rsk");
 
     var price = document.createElement("p");
-    price.textContent = "₹" + elem.price;
+    price.textContent = "$" + elem.price;
 
     var quantity = document.createElement("h2");
     quantity.textContent = "Quantity";
 
     var span = document.createElement("span");
     span.textContent = " " + "1";
+    span.style= "color:black";
 
 
 
@@ -80,14 +82,11 @@ function displayCart(cart) {
         var pr = parseInt(value) - 1;
         var va = pr * elem.price
         span.textContent = pr;
-        price.textContent = "₹" + va;
+        price.textContent = "$" + va;
         var a = document.getElementById("pr").textContent;
         var last = parseInt(a) - parseInt(elem.price);
         document.getElementById("pr").textContent = last;
       }
-
-
-
 
 
     }
@@ -102,6 +101,7 @@ function displayCart(cart) {
     del.addEventListener("click", function () {
       delrow(elem);
     })
+
 
     quantity.append(span);
     diva.append(price, increase, quantity, decrease);
@@ -125,6 +125,7 @@ function delrow(elem) {
 }
 function updateCount(cart) {
   document.getElementById("per").textContent = cart.length;
+  per.style= "color:black";
 }
 
 

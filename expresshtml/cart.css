@@ -10,11 +10,11 @@ body {
 
 }
 
-div>img {
+/* div>img {
     width: 35px;
     height: 28px;
     margin-top: 20px;
-}
+} */
 
 .sp {
     display: flex;
@@ -237,6 +237,10 @@ h2 {
     height: 40px;
     margin-left: 135px;
 }
+
+
+
+
 
 /* 
 NAVBAR CSS */
