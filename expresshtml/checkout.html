@@ -24,28 +24,28 @@
             </div>
             <div class="box-col show" id="contact-form-id">
                 <h2 style="font-weight: lighter;">Contact Info</h2>
-                <form action="" id="submitContact">
+                <form action="/" id="submitContact" method="get">
                     <div class="username">
                         <div class="firstname">
                             <label for="">First Name</label>
-                            <input type="text" id="firstname" class="inputfield" required>
+                            <input type="text" name="firstname" id="firstname" class="inputfield" required>
                         </div>
                         <div class="lastname">
                             <label for="">Last Name</label>
-                            <input type="text" id="lastname" class="inputfield" required>
+                            <input type="text" name="lastname" id="lastname" class="inputfield" required>
                         </div>
                     </div>
                     <div>
                         <label for="">Email Address</label>
-                        <input type="email" id="email" class="inputfield-full" required>
+                        <input type="email" name="email" id="email" class="inputfield-full" required>
                     </div>
                     <div>
                         <label for="">Confirm Email Address</label>
-                        <input type="email" id="confirmemail" class="inputfield-full" required>
+                        <input type="email" name="email2" id="confirmemail" class="inputfield-full" required>
                     </div>
                     <div>
                         <label for="">Phone Number</label>
-                        <input type="text" id="phone" class="inputfield-full" required>
+                        <input type="text" name="phone" id="phone" class="inputfield-full" required>
                     </div>
                     <button class="button-style" type="submit" onclick="contactfunction()">SAVE & CONTINUE</button>
                 </form>
@@ -164,23 +164,29 @@
                     <input type="radio" id="COD" name="payment">
                     <label for="COD">Cash On Delivery</label><br>
                 </div>
-                <div>
-                    <input type="radio" id="UPI" name="payment">
+                <div onclick="radioButtonClick">
+                    <input type="radio" id="UPI" name="payment" checked>
                     <label for="UPI">Credit/Debit/UPI</label>
                 </div>
 
-                <button class="button-style" type="submit">SAVE & CONTINUE</button>
+                <button class="button-style" type="submit" onclick="radioButtonClick()">SAVE & CONTINUE</button>
             </div>
 
-            <div class="box-col">
+            <div class="box-col" id="paymentBlock">
                 <h2 style="font-weight: lighter;">Payment</h2>
                 <div class="username">
                     <div class="firstname-zipcode">
                         <label for="">Gift Card Number</label>
                         <input type="text" id="inputfield-giftcard-number">
+                        <!-- <p id="giftApplied"> -->
                     </div>
-                    <button id="promo-checkout-button">APPLY</button>
+
+                    <button id="promo-checkout-button" onclick="applyGiftCard()">APPLY</button>
                 </div>
+                <p id="giftPromoApplied" style="text-align: center; font-weight: bold;">
+
+                </p>
+
                 <br>
                 <div>
                     <label for="" class="upi-button-col"><b>UPI ID</b></label>
@@ -248,9 +254,7 @@
                 </div>
             </div>
             <div class="box-col">
-                <h2 style="font-weight: lighter;">Review & Place Order</h2>
-
-                <button class="button-style" onclick="document.location='./orderconfirmation.html'">Submit</button>
+                <button class="button-style" onclick="document.location='./orderconfirmation.html'">Place order</button>
             </div>
         </div>
         <div class="order-details">
@@ -260,9 +264,23 @@
             </div>
             <div class="box-col">
                 <h2 style="font-weight: lighter;">Order Summary</h2>
+                <div>
+                    <p style="font-weight: bolder;"> Standard Shipping
+                        :-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Free</p>
+
+                </div>
             </div>
             <div class="box-col">
                 <h2 style="font-weight: lighter;">Shopping Bag</h2>
+                <p id="shoppingBagData" style="font-weight: bold;">
+
+                </p>
+                <p id="shoppingBagData2" style=" font-weight: bold;">
+                    Product Name :-
+                </p>
+                <p id="shoppingBagData3" style=" font-weight: bold;">
+                    Product Size :-
+                </p>
             </div>
             <div class="box-col">
                 <h3 style="font-weight: lighter;">A Few Things You Should Know</h3>
