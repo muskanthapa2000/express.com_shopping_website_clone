@@ -1,6 +1,7 @@
 
         body{
             font-family: 'Arial';
+           
         }
         
         #topHeader{
@@ -190,28 +191,30 @@
      .containerr{
         display:flex;
         justify-content: center;
-        width:80%;
+        width:100%;
         margin :auto;
-        
        
-        
-        
-
      }
+
+     
      nav>ul{
         margin: auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         
 
      }
      nav>ul>li{
-        padding: 20px 20px;
+        /* width:100%; */
+        align-items: center;
+        padding: 20px ;
         list-style: none;
      }
       
      nav>ul>li>a{
         text-decoration: none;
+        font-size: 13px;
         
         
         color: black;
